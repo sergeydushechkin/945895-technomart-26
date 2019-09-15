@@ -261,18 +261,13 @@
     <section>
       <h2 class="visually-hidden">Форма напишите нам.</h2>
       <form method="post" action="http://echo.htmlacademy.ru">
-        <label>
-          <p>Ваше имя:</p>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          <p>Ваше e-mail:</p>
-          <input type="email" name="name" placeholder="email@example.com">
-        </label>
-        <label>
-          <p>Текст письма:</p>
-          <textarea name="text" cols="50" rows="5" placeholder="В свободной форме"></textarea>
-        </label>
+        <p><label for="name">Ваше имя:</label></p>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <p><label for="email">Ваше e-mail:</label></p>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+        <p><label for="text">Текст письма:</label></p>
+        <textarea name="text" cols="50" rows="5" id="text" placeholder="В свободной форме"></textarea>
+
         <div>
           <button type="submit">Отправить</button>
         </div>
@@ -281,7 +276,7 @@
 
     <section>
       <h2 class="visually-hidden">Как до нас добраться:</h2>
-      <img src="img/map-popup.png" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="780px">
+      <img src="img/map-popup.png" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="780">
       <button type="button">Закрыть</button>
     </section>
   </body>
