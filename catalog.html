@@ -71,8 +71,64 @@
       <h1>Перфораторы</h1>
 
       <section>
-        <h2 class="visually-hidden">Параметры фильтра</h2>
-        <!--Форма-->
+        <h2>Фильтр:</h2>
+        <form method="get" action="http://echo.htmlacademy.ru">
+          <label for="price">Цена:</label>
+          <input type="range" name="price" id="price" min="0" max="30000">
+          <p>
+            <output name="price_min">0</output>
+            -
+            <output name="price_max">30000</output>
+          </p>
+          <hr>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="bosch" checked>Bosch
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="interskol">Интерскол
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="makita" checked>Makita
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="dewalt">DeWalt
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="hitachi">Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="power" checked>Аккумуляторные
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="power">Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -181,7 +237,7 @@
           </li>
         </ul>
         <ul>
-          <li><a href="">1</a></li>
+          <li><a>1</a></li>
           <li><a href="">2</a></li>
           <li><a href="">3</a></li>
           <li><a href="">Следующая</a></li>
