@@ -10,9 +10,20 @@
         <a href="index.html">
           <img src="img/logo.png" alt="Логотип магазина «Техномарт»">
         </a>
-        <!--Форма поиска-->
-        <a href="">Закладки</a>
-        <a href="">Корзина</a>
+        <form method="post" action="http://echo.htmlacademy.ru">
+          <label>
+            Поиск:
+            <input type="search" name="search">
+          </label>
+          <label>
+            <a href="">Закладки:</a>
+            <output name="favorites">0</output>
+          </label>
+          <label>
+            <a href="">Корзина:</a>
+            <output name="bin">0</output>
+          </label>
+        </form>
         <a href="">Оформить заказ</a>
       </div>
 
@@ -247,5 +258,30 @@
       </div>
     </footer>
 
+    <section>
+      <h2 class="visually-hidden">Форма напишите нам.</h2>
+      <form method="post" action="http://echo.htmlacademy.ru">
+        <label>
+          <p>Ваше имя:</p>
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          <p>Ваше e-mail:</p>
+          <input type="email" name="name" placeholder="email@example.com">
+        </label>
+        <label>
+          <p>Текст письма:</p>
+          <textarea name="text" cols="50" rows="5" placeholder="В свободной форме"></textarea>
+        </label>
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться:</h2>
+      <img src="img/map-popup.png" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="780px">
+    </section>
   </body>
 </html>
