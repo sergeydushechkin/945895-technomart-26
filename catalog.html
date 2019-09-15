@@ -76,38 +76,33 @@
           <label for="price">Цена:</label>
           <input type="range" name="price" id="price" min="0" max="30000">
           <p>
-            <output name="price_min">0</output>
+            <input type="text" name="price_min" value="0">
             -
-            <output name="price_max">30000</output>
+            <input type="text" name="price_max" value="30000">
           </p>
           <hr>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="bosch" checked>Bosch
-                </label>
+                <input type="checkbox" id="bosch" name="bosch" checked>
+                <label for="bosch">Bosch</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="interskol">Интерскол
-                </label>
+                <input type="checkbox" id="interskol" name="interskol">
+                <label for="interskol">Интерскол</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="makita" checked>Makita
-                </label>
+                <input type="checkbox" id="makita" name="makita" checked>
+                <label for="makita">Makita</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="dewalt">DeWalt
-                </label>
+                <input type="checkbox" id="dewalt" name="dewalt">
+                <label for="dewalt">DeWalt</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="hitachi">Hitachi
-                </label>
+                <input type="checkbox" id="hitachi" name="hitachi">
+                <label for="hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -116,14 +111,12 @@
             <legend>Питание:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="power" checked>Аккумуляторные
-                </label>
+                <input type="radio" na id="accum" me="power" checked>
+                <label for="accum">Аккумуляторные</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="power">Сетевые
-                </label>
+                <input type="radio" na id="cable" me="power">
+                <label for="cable">Сетевые</label>
               </li>
             </ul>
           </fieldset>
