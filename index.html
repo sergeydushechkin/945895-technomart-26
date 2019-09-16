@@ -13,7 +13,7 @@
         <form method="get" action="http://echo.htmlacademy.ru">
           <label>
             Поиск:
-            <input type="search" name="search">
+            <input type="search" name="search" required>
           </label>
           <button type="submit">Искать</button>
         </form>
@@ -38,7 +38,7 @@
         </ul>
       </div>
 
-      <nav>
+      <nav aria-label="Меню навигации по сайту">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -274,11 +274,11 @@
       <h2 class="visually-hidden">Форма напишите нам.</h2>
       <form method="post" action="http://echo.htmlacademy.ru">
         <p><label for="name">Ваше имя:</label></p>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
         <p><label for="email">Ваше e-mail:</label></p>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
         <p><label for="text">Текст письма:</label></p>
-        <textarea name="text" cols="50" rows="5" id="text" placeholder="В свободной форме"></textarea>
+        <textarea name="text" cols="50" rows="5" id="text" placeholder="В свободной форме" required></textarea>
 
         <div>
           <button type="submit">Отправить</button>
