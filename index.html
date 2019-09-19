@@ -8,11 +8,12 @@
   </head>
   <body>
 
-<!--------------------Header верх------------------------>
+<!--------------------ХЕДЕР------------------------>
+  <!--------------------Верх хедера------------------------>
     <header class="main-header">
       <div class="header-top">
         <a class="header-logo" href="index.html">
-          <img src="img/logo.png" alt="Логотип магазина «Техномарт»">
+          <img src="img/logo.png" alt="Логотип магазина «Техномарт»" width="220px" height="47px">
         </a>
         <form class="header-form-search" method="get" action="http://echo.htmlacademy.ru">
           <label class="search-label" for="search-input">Поиск:</label>
@@ -23,7 +24,7 @@
         <a class="header-top-item header-top-bin" href="">Корзина:</a>
         <a class="header-top-item header-top-order" href="">Оформить заказ</a>
       </div>
-<!--------------------Header середина------------------------>
+  <!--------------------Средняя область хедера------------------------>
       <div class="header-mid">
         <p class="header-description">
             Интернет-магазин<br>
@@ -39,7 +40,7 @@
           <li><a href="">Регистрация</a></li>
         </ul>
       </div>
-<!--------------------Header низ, навигация------------------------>
+  <!--------------------Хедер низ, навигация------------------------>
       <nav class="main-nav" aria-label="Меню навигации по сайту">
         <ul class="main-nav-list">
           <li><a href="index.html">Главная</a></li>
@@ -53,10 +54,10 @@
       </nav>
     </header>
 
-<!--------------------Main-------------------------->
+<!--------------------Основное содержимое-------------------------->
     <main class="container">
       <h1 class="visually-hidden">Главная страница магазина</h1>
-
+  <!---------------------Промо-блок--------------------------->
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div>
@@ -89,7 +90,7 @@
           </div>
         </div>
       </section>
-
+  <!---------------------Популярные товары--------------------------->
       <section class="popular-goods">
         <div>
             <h2>Популярные товары:</h2>
@@ -138,7 +139,7 @@
           </li>
         </ul>
       </section>
-
+  <!---------------------Популярные производители--------------------------->
       <section class="popular-devs">
         <div>
           <h2>Популярные производители:</h2>
@@ -171,9 +172,9 @@
           </li>
         </ul>
       </section>
-
+  <!---------------------Сервисы--------------------------->
       <section class="services">
-        <h2>Сервисы</h2>
+        <h2 class="visually-hidden">Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -209,14 +210,15 @@
         </div>
       </section>
 
-      <div class="index-columns">
-        <section class="about">
-          <h2>КОМПАНИЯ «Техномарт»</h2>
+      <!---------------------О компании--------------------------->
+      <div class="about-columns">
+        <section class="about-description">
+          <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь!
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
               Техномарт работает со многими транспортными компаниями:</p>
-          <ul>
+          <ul class="about-delivery">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
@@ -224,39 +226,40 @@
           <a class="button-red" href="">Подробнее о компании</a>
         </section>
 
-        <section class="contacts">
+        <section class="about-contacts">
           <h2>Контакты</h2>
           <p>
             Вы можете забрать товар сами,
               заехав в наш офис:
           </p>
           <a href=""><img src="img/map.png" alt="Адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158"></a>
-          <p>
-            <a class="button-red" href="">Заблудились? Напишите нам!</a>>
-          </p>
+          <a class="button-red" href="">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
 
 
-<!--------------------Footer------------------------>
+<!--------------------ФУТЕР------------------------>
     <footer class="main-footer">
+  <!--------------------Верх футера------------------------>
       <div class="footer-top">
         <div class="footer-top-left">
           <a href="index.html">
-            <img src="img/logo.png" alt="Логотип магазина «Техномарт»">
+            <img src="img/logo.png" alt="Логотип магазина «Техномарт»" width="220px" height="68px">
           </a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55
           </p>
         </div>
-        <div class="footer-top-right">
-          <ul class="footer-nav-list">
+        <div class="footer-nav">
+          <ul class="footer-nav-row1">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="">Доставка</a></li>
             <li><a href="">Контакты</a></li>
+          </ul>
+          <ul class="footer-nav-row2">
             <li><a href="">Материалы</a></li>
             <li><a href="">Техника</a></li>
             <li><a href="">Инструмент</a></li>
@@ -264,9 +267,9 @@
           </ul>
         </div>
       </div>
-
+  <!--------------------Низ футера------------------------>
       <div class="footer-bottom">
-        <p class="footer-rights">© 2010–2019 Компания «Техномарт»
+        <p>© 2010–2019 Компания «Техномарт»
             Все права защищены
         </p>
         <ul class="footer-socials">
@@ -274,11 +277,11 @@
           <li><a href="">Техномарт в Фейсбук</a></li>
           <li><a href="">Техномарт в Инстаграмм</a></li>
         </ul>
-        <p class="footer-feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p class="footer-madeby">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <p class="footer-links">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="footer-links">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
-
+<!--------------------МОДАЛКИ------------------------>
     <section>
       <h2 class="visually-hidden">Форма напишите нам.</h2>
       <form method="post" action="http://echo.htmlacademy.ru">

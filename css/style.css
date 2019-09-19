@@ -124,7 +124,8 @@ body {
   background-color: #f1f5f7;
 }
 
-/*------------------------Верх хедера-----------------------------------------*/
+/*------------------------ХЕДЕР-----------------------------------------*/
+  /*------------------------Верх хедера-----------------------------------------*/
 .header-top {
   font-size: 17px;
   line-height: 18px;
@@ -186,7 +187,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
-/*------------------------Средняя область хедера-----------------------------------------*/
+  /*------------------------Средняя область хедера-----------------------------------------*/
 
 .header-description {
   color: #ee3643;
@@ -233,7 +234,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*------------------------Хедер низ, навигация-----------------------------------------*/
+  /*------------------------Хедер низ, навигация-----------------------------------------*/
 
 .main-nav {
   font-size: 17px;
@@ -263,5 +264,130 @@ body {
 }
 
 /*------------------------Основная. Содержимое-----------------------------------------*/
+.button-red {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border-radius: 1px;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #ca2c37
+}
+
+.button-red:active {
+  background-color: #ba2732;
+}
   /*------------------------Основная. О компании-----------------------------------------*/
+.about-columns {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.about-columns h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-columns p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-delivery {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+
+/*------------------------ФУТЕР-----------------------------------------*/
+  /*------------------------Верх футера-----------------------------------------*/
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-top p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-nav  ul {
+  list-style: none;
+}
+
+.footer-nav a {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer-nav-row1 a {
+  color: #f1f5f7;
+}
+
+.footer-nav-row2 a {
+  color: #ffd180
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  text-decoration: underline;
+}
+
+.footer-nav a:active {
+  opacity: 0.5;
+}
+/*------------------------Низ футера-----------------------------------------*/
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-socials li {
+  list-style: none;
+  background-color: #212a3a;
+
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.footer-socials li:hover,
+.footer-socials li:focus,
+.footer-socials li:active
+ {
+  background-color: #ee3643;
+}
+
+.footer-links a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus
+ {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.footer-links a:active {
+  color: #ee3643;
+}
+
 
