@@ -234,6 +234,42 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.username-buttons {
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.username-buttons a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.username-buttons a:active {
+  opacity: 0.3;
+}
+
+.user-menu {
+  font-size: 16px;
+  line-height: 18px;
+
+  list-style: none;
+}
+
+.user-menu a {
+  color: #32425c;
+}
+
+.user-menu a:hover,
+.user-menu a:focus {
+  color: #ee3643;
+}
+
+.user-menu a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
   /*------------------------Хедер низ, навигация-----------------------------------------*/
 
 .main-nav {
@@ -284,6 +320,7 @@ body {
 .button-red:active {
   background-color: #ba2732;
 }
+/*------------------------Основная.-----------------------------------------*/
   /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
   color: #000000;
@@ -307,11 +344,135 @@ body {
   line-height: 20px;
   list-style: none;
 }
+/*------------------------Каталог-----------------------------------------*/
+  /*------------------------Каталог. Содержимое-----------------------------------------*/
+.catalog {
+  color: #000000;
+  font-family: 'PT Sans', Arial, sans-serif;
+  background-color: #ffffff;
+}
 
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog h1 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+  /*------------------------Каталог. Фильтры-----------------------------------------*/
+.filter-switches legend {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-switches ul {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.filter-switches fieldset {
+  border: none;
+}
+
+.filter-devs input[type="checkbox"]:disabled ~ label {
+  opacity: 0.4;
+}
+
+.filter-showbutton {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+}
+/*------------------------Каталог. Сортировка-----------------------------------------*/
+
+/*------------------------Каталог. Перечень товаров-----------------------------------------*/
+.goods ul {
+  list-style: none;
+}
+
+.goods-name {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.goods-name a {
+  color: #000000;
+}
+
+.goods-list a {
+  text-decoration: none;
+}
+
+.goods-item {
+  border: 1px solid #e5e5e5;
+}
+
+.goods-discount {
+  color: #999999;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.goods-cost {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  background-color: #ee3643;
+}
+
+.item-popup-buy {
+  font-family: 'Cuprum', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  border-radius: 1px;
+  box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.item-popup-buy:hover,
+.item-popup-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.item-popup-buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
 
 /*------------------------ФУТЕР-----------------------------------------*/
   /*------------------------Верх футера-----------------------------------------*/
-
 .footer-top {
   background-color: #32425c;
 }
