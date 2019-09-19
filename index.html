@@ -8,22 +8,22 @@
   </head>
   <body>
 
-    <!--------------------Header------------------------>
+<!--------------------Header верх------------------------>
     <header class="main-header">
       <div class="header-top">
         <a class="header-logo" href="index.html">
           <img src="img/logo.png" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="header-form-search" method="get" action="http://echo.htmlacademy.ru">
-          <label class="header-top-item header-top-search" for="search-input">Поиск:</label>
-            <input type="search" name="search" id="search-input" required>
+          <label class="search-label" for="search-input">Поиск:</label>
+            <input class="search-input" type="text" name="search" id="search-input" required>
           <button class="visually-hidden" type="submit">Искать</button>
         </form>
         <a class="header-top-item header-top-favorites" href="">Закладки:</a>
         <a class="header-top-item header-top-bin" href="">Корзина:</a>
         <a class="header-top-item header-top-order" href="">Оформить заказ</a>
       </div>
-
+<!--------------------Header середина------------------------>
       <div class="header-mid">
         <p class="header-description">
             Интернет-магазин<br>
@@ -35,11 +35,11 @@
             <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
         <ul class="header-logon">
-          <li class="header-login"><a href="">Войти</a></li>
+          <li><a class="button-log-in" href="">Войти</a></li>
           <li><a href="">Регистрация</a></li>
         </ul>
       </div>
-
+<!--------------------Header низ, навигация------------------------>
       <nav class="main-nav" aria-label="Меню навигации по сайту">
         <ul class="main-nav-list">
           <li><a href="index.html">Главная</a></li>

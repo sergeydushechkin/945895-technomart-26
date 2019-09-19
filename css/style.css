@@ -120,8 +120,11 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #ffffff;
+
+  background-color: #f1f5f7;
 }
 
+/*------------------------Верх хедера-----------------------------------------*/
 .header-top {
   font-size: 17px;
   line-height: 18px;
@@ -129,5 +132,136 @@ body {
   background-color: #293449;
 }
 
-.header-top-item {
+.header-form-search,
+.header-form-search input {
+  color:#ffffff;
+  line-height: 18px;
+
+  border: none;
+  background-color: #293449;
 }
+
+.header-form-search:hover,
+.header-form-search input:hover
+{
+  background-color: #212a3a;
+}
+
+.header-form-search input:focus {
+  font: inherit;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-top-item {
+  color:#ffffff;
+  line-height: 18px;
+
+  text-decoration: none;
+}
+
+.header-top-favorites:hover,
+.header-top-favorites:focus,
+.header-top-bin:hover,
+.header-top-bin:focus {
+  background-color: #212a3a;
+}
+
+.header-top-favorites:active,
+.header-top-bin:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.header-top-order {
+  background-color: #63a63e;
+}
+
+.header-top-order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-top-order:active
+{
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+/*------------------------Средняя область хедера-----------------------------------------*/
+
+.header-description {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.header-phone {
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+
+  border: 3px solid #ffffff;
+}
+
+.header-address {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header-logon {
+  font-size: 21px;
+  line-height: 21px;
+
+  list-style: none;
+}
+
+.header-logon a {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.header-logon a:hover,
+.header-logon a:focus {
+  color: #ee3643;
+}
+
+.header-logon a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------Хедер низ, навигация-----------------------------------------*/
+
+.main-nav {
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.main-nav-list {
+  list-style: none;
+}
+
+.main-nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus {
+  background-color: #293449;
+}
+
+.main-nav-list a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
+
+/*------------------------Основная. Содержимое-----------------------------------------*/
+  /*------------------------Основная. О компании-----------------------------------------*/
+
