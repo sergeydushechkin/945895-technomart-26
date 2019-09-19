@@ -420,16 +420,21 @@ body {
   line-height: 20px;
 }
 
-.goods-name a {
-  color: #000000;
-}
-
 .goods-list a {
   text-decoration: none;
 }
 
+.goods-name a {
+  color: #000000;
+}
+
 .goods-item {
   border: 1px solid #e5e5e5;
+}
+
+.goods-item:hover,
+.goods-item:focus {
+  border: none;
 }
 
 .goods-discount {
@@ -449,15 +454,20 @@ body {
   background-color: #ee3643;
 }
 
-.item-popup-buy {
+.item-popup-buy,
+.item-popup-addfavorites {
   font-family: 'Cuprum', Arial, sans-serif;
-  color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #63a63e;
   border-radius: 1px;
+}
+
+.item-popup-buy {
+  color: #ffffff;
+
+  background-color: #63a63e;
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
@@ -470,6 +480,23 @@ body {
   background-color: #518534;
   box-shadow: none;
 }
+
+.item-popup-addfavorites {
+  color: #32425c;
+
+  background-color: transparent;
+  border: 3px solid #63a63e;
+}
+
+.item-popup-addfavorites:hover,
+.item-popup-addfavorites:focus {
+  border: 3px solid #32425c;
+}
+
+.item-popup-addfavorites:active {
+  opacity: 0.3;
+}
+
 
 /*------------------------ФУТЕР-----------------------------------------*/
   /*------------------------Верх футера-----------------------------------------*/
