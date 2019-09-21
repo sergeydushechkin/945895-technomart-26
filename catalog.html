@@ -35,6 +35,7 @@
             <a class="header-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
             <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
+        <!--Меню пользователя-->
         <div class="header-user">
           <div class="username-buttons">
             <a class="user-profile" href="">Равшан Джамшутович</a>
@@ -68,9 +69,11 @@
         <li><a href="">Перфораторы</a></li>
       </ul>
       <h1>Перфораторы</h1>
+
       <!--Каталог. Фильтры-->
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр:</h2>
+        <h2>Фильтр:</h2>
+        <!--Каталог. Фильтр по цене-->
         <form class="form-filter" method="get" action="http://echo.htmlacademy.ru">
           <label for="price">Цена:</label>
           <input type="range" name="price" id="price" min="0" max="30000">
@@ -80,6 +83,7 @@
             <input type="text" name="price_max" value="30000">
           </p>
           <hr>
+          <!--Каталог. Фильтр чекбоксы. Производители-->
           <div class="filter-switches">
             <fieldset class="filter-devs">
               <legend><b>Производители:</b></legend>
@@ -107,6 +111,7 @@
               </ul>
             </fieldset>
             <hr>
+            <!--Каталог. Фильтр переключатели. Питание-->
             <fieldset class="filter-power">
               <legend><b>Питание:</b></legend>
               <ul>
@@ -227,15 +232,16 @@
             <p class="goods-cost">12500 Р.</p>
           </li>
         </ul>
-        <ul>
-          <li><a>1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
+        <!--Каталог. Пагинация-->
+        <ul class="goods-pagination">
+          <li><a class="pagination-item pagination-current">1</a></li>
+          <li><a class="pagination-item" href="">2</a></li>
+          <li><a class="pagination-item" href="">3</a></li>
+          <li><a class="pagination-item" href="">Следующая</a></li>
         </ul>
       </section>
       <!--Каталог. О перфораторах-->
-      <section>
+      <section class="about-goods">
         <h2>Пара слов о перфораторах</h2>
         <p>
           Перфоратор - универсальный строительный инструмент. Предназначен для сверления в кирпиче,
