@@ -70,10 +70,13 @@ body {
   line-height: 24px;
   color: #ffffff;
 
-  background-color: #f1f5f7;
+  background-color: #ffffff;
 }
 
 /*------------------------ХЕДЕР-----------------------------------------*/
+.main-header {
+  background-color: #f1f5f7;
+}
 /*------------------------Верх хедера-----------------------------------------*/
 .header-top {
   font-size: 17px;
@@ -159,6 +162,7 @@ body {
   text-align: center;
 }
 
+/*---------------------Кнопки входа--------------------------*/
 .header-logon {
   font-size: 21px;
   line-height: 21px;
@@ -181,6 +185,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*---------------------Пльзователь вошел--------------------------*/
 .username-buttons {
   font-size: 21px;
   line-height: 21px;
@@ -218,7 +223,6 @@ body {
 }
 
 /*------------------------Хедер низ, навигация-----------------------------------------*/
-
 .main-nav {
   font-size: 17px;
   line-height: 17px;
@@ -256,7 +260,7 @@ body {
   text-transform: uppercase;
 
   background-color: #ee3643;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .button-red:hover,
@@ -268,10 +272,167 @@ body {
   background-color: #ba2732;
 }
 /*------------------------Основная.-----------------------------------------*/
+/*---------------------Основаная. Промо--------------------------*/
+.promo {
+  background-color: #ffffff;
+}
+/*Кнопка*/
+.promo-small-block h3 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.promo-small-block a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.promo-small-block a:hover,
+.promo-small-block a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-small-block a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Плитки*/
+.promo-small-block {
+  width: 300px;
+  height: 123px;
+}
+
+.promo-materials {
+  background-color: #ffbf47;
+}
+
+.promo-instruments {
+  background-color: #3bbce3;
+}
+
+.promo-technics {
+  background-color: #dc91d8;
+}
+
+.promo-discounts {
+  background-color: #8ed78f;
+}
+
+.promo-delivery {
+  background-color: #ffc047;
+}
+/*Промо слайдер*/
+.promo-slider h3 {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo-slider p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+/*---------------------Основаная. Популярное--------------------------*/
+.popular-header {
+  background-color: #f9f5f0;
+}
+
+.popular-header h2 {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+/*---------------------Основаная. Популярные товары--------------------------*/
+
+
+/*Карточки товаров см. стили каталога - Перечень товаров*/
+/*---------------------Основаная. Популярные производители--------------------------*/
+.popular-devs-list {
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.popular-devs-list li {
+  width: 220px;
+  height: 145px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+.popular-devs-list li:hover,
+.popular-devs-list li:focus {
+  border: none;
+  box-shadow: 0 10px 20px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-devs-list li:active {
+  opacity: 0.3;
+  box-shadow: 0 4px 20px 0 rgba(41, 52, 73, 0.5);
+}
+/*---------------------Основаная. Сервисы--------------------------*/
+.services {
+  background-color: #f4f8f9;
+}
+
+.services h2 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services h3 {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-buttons button {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+
+  background-color: #32425c;
+  border: none;
+}
+
+.services-buttons button:hover,
+.services-buttons .button-red:focus {
+  background-color: #293449;
+}
+
+.services-buttons button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
 /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
   color: #000000;
-  background-color: #ffffff;
 }
 
 .about-columns h2 {
@@ -322,7 +483,29 @@ body {
   background-color: #f2f6f8;
 }
 
-/*------------------------Каталог. Фильтры-----------------------------------------*/
+/*------------------------Каталог. Фильтры----------------------------------*/
+.filters {
+  background-color: #ffffff;
+}
+
+.filters h2 {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+/*------------------------Каталог. Фильтры. По цене-------------------------*/
+.form-filter input {
+  background-color: #f7f3ec;
+}
+
+.form-filter input[type="text"] {
+  border: none;
+}
+/*------------------------Каталог. Фильтры. Переключатели-------------------*/
 .filter-switches legend {
   font-size: 17px;
   line-height: 30px;
@@ -356,10 +539,42 @@ body {
   background-color: transparent;
   border: 1px solid #e5e5e5;
 }
-/*------------------------Каталог. Сортировка-----------------------------------------*/
+/*------------------------Каталог. Фильтры. Сортировка----------------------*/
+.sorting {
+  background-color: #f7f3ec;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-/*------------------------Каталог. Перечень товаров-----------------------------------------*/
-.goods ul {
+.sorting-sortby {
+  list-style: none;
+}
+
+.sorting-sortby a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration-color: #ee3643;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.sorting-sortby a:hover,
+.sorting-sortby a:focus {
+  color: #000000;
+  text-decoration-style: solid;
+}
+
+.sorting-sortby a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+/*------------------------Каталог, Основная. Перечень товаров---------------*/
+.goods-list {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.goods-list,
+.goods-item-popup {
   list-style: none;
 }
 
@@ -377,6 +592,7 @@ body {
 }
 
 .goods-item {
+  width: 220px;
   border: 1px solid #e5e5e5;
 }
 
@@ -444,7 +660,55 @@ body {
 .item-popup-addfavorites:active {
   opacity: 0.3;
 }
+/*------------------------Каталог. Пагинация--------------------------------*/
+.goods-pagination {
+  list-style: none;
+}
 
+.pagination-item {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item:active {
+  border-color: #ee3643;
+}
+
+.pagination-current {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+/*------------------------Каталог. О товарах--------------------------------*/
+.about-goods {
+  background-color: #f2f6f8;
+}
+
+.about-goods h2 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-goods p {
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+}
 /*------------------------ФУТЕР-----------------------------------------*/
 /*------------------------Верх футера-----------------------------------------*/
 .footer-top {
