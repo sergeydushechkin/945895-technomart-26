@@ -385,7 +385,7 @@ body {
   opacity: 0.3;
   box-shadow: 0 4px 20px 0 rgba(41, 52, 73, 0.5);
 }
-/*---------------------Основаная. Сервисы--------------------------*/
+/*---------------------Основаная. Сервисы слайдер--------------------------*/
 .services {
   background-color: #f4f8f9;
 }
@@ -409,6 +409,10 @@ body {
   color: #000000;
   font-size: 13px;
   line-height: 24px;
+}
+
+.services-buttons {
+  list-style: none;
 }
 
 .services-buttons button {
