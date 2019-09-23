@@ -11,96 +11,110 @@
 
     <header class="main-header">
       <div class="header-top">
-        <a class="header-logo" href="index.html"></a>
-        <form class="header-form-search">
-        </form>
-        <a class="header-top-item header-top-favorites"></a>
-        <a class="header-top-item header-top-bin"></a>
-        <a class="header-top-item header-top-order"></a>
+        <div class="container">
+          <div class="header-top-left"> <!-- Добавлено -->
+            <a class="header-logo" href="index.html">1</a>
+            <form class="header-form-search">2
+            </form>
+          </div>
+          <div class="header-top-right"> <!-- Добавлено -->
+            <a class="header-top-item header-top-favorites">1</a>
+            <a class="header-top-item header-top-bin">2</a>
+            <a class="header-top-item header-top-order">3</a>
+          </div>
+        </div>
       </div>
-      <div class="header-mid">
-        <p class="header-description"></p>
-        <p class="header-contacts"></p>
-        <ul class="header-logon">
-          <li></li>
-          <li></li>
-        </ul>
+      <div class="container">
+        <div class="header-mid">
+          <p class="header-description">1</p>
+          <p class="header-contacts">2</p>
+          <ul class="header-logon">
+            <li>3.1</li>
+            <li>3.2</li>
+          </ul>
+        </div>
+
+        <nav class="main-nav">
+
+          <ul class="main-nav-list">
+            <li>Главная</li>
+            <li>Компания</li>
+            <li>Каталог</li>
+            <li>Новости</li>
+            <li>Спецпредложения</li>
+            <li>Доставка</li>
+            <li>Контакты</li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
     </header>
 
-    <main class="container">
-      <section class="promo">
-        <div class="promo-small-block promo-materials new-marker"></div>
-        <div class="promo-small-block promo-instruments"></div>
-        <div class="promo-small-block promo-technics"></div>
-        <div class="promo-small-block promo-discounts"></div>
-        <div class="promo-small-block promo-delivery"></div>
-        <div class="promo-slider"></div>
-      </section>
-      <section class="popular popular-goods">
-        <div class="popular-header">
+    <main>
+      <div class="container"> <!-- Добавлено -->
+        <section class="promo">
+          <!--<div class="promo-small-block promo-materials new-marker"></div>
+          <div class="promo-small-block promo-instruments"></div>
+          <div class="promo-small-block promo-technics"></div>
+          <div class="promo-small-block promo-discounts"></div>
+          <div class="promo-small-block promo-delivery"></div>
+          <div class="promo-slider"></div>-->
+        </section>
+        <!--<section class="popular popular-goods">
+          <div class="popular-header">
+              <h2></h2>
+              <a class="button-red"></a>
+          </div>
+          <ul class="goods-list">
+            <li class="goods-item"></li>
+            <li class="goods-item"></li>
+            <li class="goods-item"></li>
+            <li class="goods-item"></li>
+          </ul>
+        </section>
+        <section class="popular popular-devs">
+          <div class="popular-header">
             <h2></h2>
             <a class="button-red"></a>
-        </div>
-        <ul class="goods-list">
-          <li class="goods-item"></li>
-          <li class="goods-item"></li>
-          <li class="goods-item"></li>
-          <li class="goods-item"></li>
-        </ul>
-      </section>
-      <section class="popular popular-devs">
-        <div class="popular-header">
-          <h2></h2>
-          <a class="button-red"></a>
-        </div>
-        <ul class="popular-devs-list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+          </div>
+          <ul class="popular-devs-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>-->
+      </div> <!-- Добавлено -->
       <section class="services">
-        <p></p>
-        <ul class="services-buttons">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div class="services-delievery">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="services-guarantee">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="services-credit">
-          <h3></h3>
-          <p></p>
-          <a class="button-red"></a>
+        <div class="container">
+          <!--<p></p>
+          <ul class="services-buttons">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="services-delievery">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="services-guarantee">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="services-credit">
+            <h3></h3>
+            <p></p>
+            <a class="button-red"></a>
+          </div>-->
         </div>
       </section>
 
-      <div class="about-columns">
+      <div class="about-columns container"> <!--Добавлено-->
         <section class="about-description">
-          <h2></h2>
+          <!--<h2></h2>
           <p></p>
           <p></p>
           <ul class="about-delivery">
@@ -108,14 +122,14 @@
             <li></li>
             <li></li>
           </ul>
-          <a class="button-red"></a>
+          <a class="button-red"></a> -->
         </section>
 
         <section class="about-contacts">
-          <h2></h2>
+          <!--<h2></h2>
           <p></p>
           <a></a>
-          <a class="button-red"></a>
+          <a class="button-red"></a> -->
         </section>
       </div>
     </main>
@@ -123,35 +137,39 @@
 
     <footer class="main-footer">
       <div class="footer-top">
-        <div class="footer-top-left">
-          <a></a>
-          <p></p>
-        </div>
-        <div class="footer-nav">
-          <ul class="footer-nav-row1">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul class="footer-nav-row2">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        <!--<div class="container">
+          <div class="footer-top-left">
+            <a></a>
+            <p></p>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-nav-row1">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="footer-nav-row2">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div> добавлено!!!!!!!!!!-->
       </div>
       <div class="footer-bottom">
-        <p></p>
-        <ul class="footer-socials">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p class="footer-links"></p>
-        <p class="footer-links"></p>
+        <!--<div class="container> добавлено!!!!!!!!!!
+          <p></p>
+          <ul class="footer-socials">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p class="footer-links"></p>
+          <p class="footer-links"></p>
+        </div> добавлено!!!!!!!!!! -->
       </div>
     </footer>
 
