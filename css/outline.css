@@ -1,0 +1,9 @@
+body {
+  background-color: white;
+  background-image: url("../preview/technomart-index.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  background-position-x: center;
+  min-height: 3160px;
+}
+
