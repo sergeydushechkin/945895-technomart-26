@@ -45,15 +45,12 @@ body.page-catalog {
 }
 
 .header-top {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
-  /*Временно*/
   background-color: rgba(0, 255, 255, 0.438);
 }
 
 .header-top .container {
   display: flex;
+  margin-bottom: 46px;
 }
 
 .header-top-left {
@@ -129,6 +126,7 @@ body.page-catalog {
 }
 
 .header-user * {
+  /*Временно*/
   min-height: 30px;
 }
 
@@ -138,14 +136,14 @@ body.page-catalog {
   margin: 0;
   padding: 0 21px;
 
+  list-style: none;
+
   /*Временно*/
   min-height: 60px;
   background-color: rgba(43, 255, 0, 0.438);
 }
 
 .main-nav-list li {
-  list-style: none;
-
   /*Временно*/
   outline: 2px solid rgb(255, 0, 0);
 }
@@ -194,10 +192,6 @@ body.page-catalog {
 }
 /* Каталог */
 
-.catalog .container {
-  margin-bottom: 60px;
-}
-
 .breadcrumbs {
   display: flex;
 
@@ -227,6 +221,8 @@ body.page-catalog {
 .catalog-area {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 60px;
   /*Временно*/
   min-height: 1142px;
   outline: 2px dashed rgba(17, 0, 255, 0.637);
@@ -257,6 +253,7 @@ body.page-catalog {
 .sorting-sortby {
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   /*Временно*/
@@ -301,6 +298,7 @@ body.page-catalog {
 .goods-pagination {
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   /*Временно*/
@@ -310,11 +308,11 @@ body.page-catalog {
 
 .about-goods {
   margin: 0 auto;
-  padding: 0;
 
   /*Временно*/
   min-height: 261px;
   outline: 2px solid rgb(255, 0, 0);
+  background-color: rgba(0, 255, 0, 0.432);
 }
 
 /* Футер */
@@ -379,8 +377,9 @@ body.page-catalog {
 }
 
 .footer-nav-row1 li {
-  width: 100px;
   /*Временно*/
+  width: 100px;
+
   min-height: 34px;
   background-color: rgba(251, 255, 0, 0.712);
 }
@@ -401,8 +400,8 @@ body.page-catalog {
 }
 
 .footer-nav-row2 li {
-  width: 100px;
   /*Временно*/
+  width: 100px;
   min-height: 34px;
   background-color: rgba(251, 255, 0, 0.712);
 }
@@ -421,4 +420,20 @@ body.page-catalog {
   margin: 0 10px;
   min-height: 107px;
   background-color: rgba(251, 255, 0, 0.712);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-socials li {
+  /*Временно*/
+  min-height: 20px;
 }
