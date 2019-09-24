@@ -6,59 +6,67 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-catalog">
 
 <!--ХЕДЕР-->
     <header class="main-header">
       <!--Верх хедера-->
       <div class="header-top">
-        <a class="header-logo" href="index.html">
-          <img src="img/logo.png" alt="Логотип магазина «Техномарт»" width="220" height="47">
-        </a>
-        <form class="header-form-search" method="get" action="http://echo.htmlacademy.ru">
-          <label class="search-label" for="search-input">Поиск:</label>
-            <input class="search-input" type="text" name="search" id="search-input" required>
-          <button class="visually-hidden" type="submit">Искать</button>
-        </form>
-        <a class="header-top-item header-top-favorites" href="">Закладки:</a>
-        <a class="header-top-item header-top-bin" href="">Корзина:</a>
-        <a class="header-top-item header-top-order" href="">Оформить заказ</a>
-      </div>
-      <!--Средняя область хедера-->
-      <div class="header-mid">
-        <p class="header-description">
-            Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
-        </p>
-        <p class="header-contacts">
-            <a class="header-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-            <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        </p>
-        <!--Меню пользователя-->
-        <div class="header-user">
-          <div class="username-buttons">
-            <a class="user-profile" href="">Равшан Джамшутович</a>
-            <a class="user-exit" href="">Выход</a>
+        <div class="container">
+          <div class="header-top-left">
+            <a class="header-logo" href="index.html">
+              <img src="img/logo.png" alt="Логотип магазина «Техномарт»" width="220" height="47">
+            </a>
+            <form class="header-form-search" method="get" action="http://echo.htmlacademy.ru">
+              <label class="search-label" for="search-input">Поиск:</label>
+                <input class="search-input" type="text" name="search" id="search-input" required>
+              <button class="visually-hidden" type="submit">Искать</button>
+            </form>
           </div>
-          <ul class="user-menu">
-            <li><a href="">Мои заказы</a></li>
-            <li><a href="">Личный кабинет</a></li>
-          </ul>
+          <div class="header-top-right">
+            <a class="header-top-item header-top-favorites" href="">Закладки:</a>
+            <a class="header-top-item header-top-bin" href="">Корзина:</a>
+            <a class="header-top-item header-top-order" href="">Оформить заказ</a>
+          </div>
         </div>
       </div>
-      <!--Хедер низ, навигация-->
-      <nav class="main-nav" aria-label="Меню навигации по сайту">
-          <ul class="main-nav-list">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="">Компания</a></li>
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
+      <!--Средняя область хедера-->
+      <div class="container">
+        <div class="header-mid">
+          <p class="header-description">
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+          </p>
+          <p class="header-contacts">
+              <a class="header-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+              <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          </p>
+          <!--Меню пользователя-->
+          <div class="header-user">
+            <div class="username-buttons">
+              <a class="user-profile" href="">Равшан Джамшутович</a>
+              <a class="user-exit" href="">Выход</a>
+            </div>
+            <ul class="user-menu">
+              <li><a href="">Мои заказы</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--Хедер низ, навигация-->
+        <nav class="main-nav" aria-label="Меню навигации по сайту">
+            <ul class="main-nav-list">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="">Компания</a></li>
+              <li><a href="">Каталог</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Спецпредложения</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+      </div>
     </header>
     <!--Основное содержимое. Каталог-->
     <main class="catalog">
@@ -257,7 +265,7 @@
     <!--ФУТЕР-->
     <footer class="main-footer">
       <!--Верх футера-->
-      <div class="footer-top">
+      <div class="footer-top container">
         <div class="footer-top-left">
           <a href="index.html">
             <img src="img/logo.png" alt="Логотип магазина «Техномарт»" width="220" height="68">
@@ -283,7 +291,7 @@
         </div>
       </div>
       <!--Низ футера-->
-      <div class="footer-bottom">
+      <div class="footer-bottom container">
         <p>© 2010–2019 Компания «Техномарт»
             Все права защищены
         </p>

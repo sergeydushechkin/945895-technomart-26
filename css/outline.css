@@ -2,6 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+body.page-index {
   background-color: white;
   background-image: url("../preview/technomart-index.jpg");
   background-repeat: no-repeat;
@@ -9,10 +15,16 @@ body {
   background-position-x: center;
   min-height: 3160px;
   min-width: 1200px;
+}
 
-  color: rgb(255, 0, 0);
-  font-weight: bold;
-  font-size: 18px;
+body.page-catalog {
+  background-color: white;
+  background-image: url("../preview/technomart-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  background-position-x: center;
+  min-height: 2260px;
+  min-width: 1200px;
 }
 
 .container {
@@ -49,9 +61,6 @@ body {
   justify-content: flex-start;
 
   width: 490px;
-  margin: 0;
-  padding: 0;
-
   /*Временно*/
   min-height: 42px;
   outline: 2px dashed rgb(225, 0, 255);
@@ -62,8 +71,6 @@ body {
   justify-content: space-around;
 
   width: 450px;
-  margin: 0;
-  padding: 0;
 
   /*Временно*/
   min-height: 42px;
@@ -112,6 +119,19 @@ body {
   display: inline-block;
 }
 
+.header-user {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  /*Временно*/
+  min-height: 75px;
+}
+
+.header-user * {
+  min-height: 30px;
+}
+
 .main-nav-list {
   display: flex;
   justify-content: space-around;
@@ -137,6 +157,7 @@ body {
   /*Временно*/
   min-height: 1329px;
   outline: 2px solid rgb(255, 0, 0);
+  background-color: rgba(4, 0, 255, 0.438);
 }
 
 .services {
@@ -145,12 +166,7 @@ body {
   /*Временно*/
   min-height: 522px;
   outline: 2px solid rgb(255, 0, 0);
-}
-
-.services .container {
-
-  /*Временно*/
-  min-height: 522px;
+  background-color: rgba(4, 0, 255, 0.438);
 }
 
 .about-columns {
@@ -174,17 +190,235 @@ body {
   width: 300px;
   /*Временно*/
   min-height: 368px;
-  background-color: rgba(4, 0, 255, 0.438);
+  background-color: rgba(208, 255, 0, 0.438);
+}
+/* Каталог */
+
+.catalog .container {
+  margin-bottom: 60px;
 }
 
-.main-footer {
+.breadcrumbs {
+  display: flex;
 
+  margin-top: 22px;
+  margin-bottom: 22px;
+  padding: 0;
+
+  list-style: none;
+  /*Временно*/
+  min-height: 13px;
+  background-color: rgba(208, 255, 0, 0.438);
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  /*Временно*/
+  min-height: 13px;
+}
+
+.catalog-category {
+  margin-bottom: 20px;
+  /*Временно*/
+  min-height: 89px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.catalog-area {
+  display: flex;
+  justify-content: space-between;
+  /*Временно*/
+  min-height: 1142px;
+  outline: 2px dashed rgba(17, 0, 255, 0.637);
+}
+
+.filters {
+  width: 220px;
+  /*Временно*/
+  min-height: 1142px;
+  background-color: rgba(208, 255, 0, 0.212);
+}
+
+.catalog-area-right {
+  width: 700px;
+  /*Временно*/
+  min-height: 1142px;
+  background-color: rgba(0, 255, 255, 0.219);
+}
+
+.sorting {
+  margin-bottom: 20px;
+
+  /*Временно*/
+  min-height: 38px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.sorting-sortby {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /*Временно*/
+  min-height: 38px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.goods {
+  margin-bottom: 32px;
+
+  /*Временно*/
+  min-height: 994px;
+  outline: 2px dashed rgba(33, 117, 0, 0.808);
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /*Временно*/
+  min-height: 994px;
+}
+
+.goods-item {
+  width: 220px;
+  height: 318px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /*Временно*/
+  outline: 2px dotted rgb(0, 160, 160);
+}
+
+.goods-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.goods-pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /*Временно*/
+  min-height: 38px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.about-goods {
+  margin: 0 auto;
+  padding: 0;
+
+  /*Временно*/
+  min-height: 261px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+/* Футер */
+.main-footer {
+  margin: 0;
+
+  /*Временно*/
   min-height: 300px;
   outline: 2px solid rgb(255, 0, 0);
 }
 
 .footer-top {
+  display: flex;
+  /*Временно*/
+  min-height: 193px;
+  outline: 2px dashed rgb(255, 0, 255);
+}
 
-  min-height: 300px;
-  background-color: rgba(4, 0, 255, 0.438);
+.footer-top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 393px;
+
+  /*Временно*/
+  min-height: 193px;
+  outline: 2px dashed rgb(255, 0, 255);
+}
+
+.footer-top-left * {
+  /*Временно*/
+  width: 300px;
+  min-height: 70px;
+  background-color: rgba(251, 255, 0, 0.712);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-top: 20px;
+
+  width: 547px;
+
+  /*Временно*/
+  min-height: 173px;
+  outline: 2px dashed rgb(255, 0, 255);
+}
+
+.footer-nav-row1 {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 12px 0;
+  /*Временно*/
+  min-height: 34px;
+  outline: 2px dashed rgb(0, 255, 21);
+}
+
+.footer-nav-row1 li {
+  width: 100px;
+  /*Временно*/
+  min-height: 34px;
+  background-color: rgba(251, 255, 0, 0.712);
+}
+
+.footer-nav-row2 {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 12px 0;
+  padding-left: 23px;
+
+  /*Временно*/
+  min-height: 34px;
+  outline: 2px dashed rgb(0, 225, 255);
+}
+
+.footer-nav-row2 li {
+  width: 100px;
+  /*Временно*/
+  min-height: 34px;
+  background-color: rgba(251, 255, 0, 0.712);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  /*Временно*/
+  min-height: 107px;
+  outline: 2px dashed rgb(0, 238, 255);
+}
+
+.footer-bottom * {
+  /*Временно*/
+  width: 100px;
+  margin: 0 10px;
+  min-height: 107px;
+  background-color: rgba(251, 255, 0, 0.712);
 }
