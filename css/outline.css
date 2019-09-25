@@ -161,14 +161,92 @@ body.page-catalog {
   outline: 2px solid rgb(255, 0, 0);
 }
 
+
+
 .promo {
   margin-top: 59px;
+  margin-bottom: 53px;
+
+  /*Временно*/
+  min-height: 409px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.popular-goods {
+  margin-bottom: 20px;
+
+  /*Временно*/
+  min-height: 427px;
+  outline: 2px solid rgb(255, 0, 0);
+}
+
+.popular-header {
+  margin-top: 20px;
+
+  /*Временно*/
+  min-height: 89px;
+  background-color: rgba(4, 0, 255, 0.247);
+}
+
+.popular-goods-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+
+  list-style: none;
+
+  /*Временно*/
+  min-height: 318px;
+  background-color: rgba(4, 0, 255, 0.247);
+}
+
+.popular-goods-list li {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.popular-goods-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-devs {
   margin-bottom: 85px;
 
   /*Временно*/
-  min-height: 1329px;
+  min-height: 419px;
   outline: 2px solid rgb(255, 0, 0);
-  background-color: rgba(4, 0, 255, 0.438);
+}
+
+.popular-devs-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  list-style: none;
+
+  /*Временно*/
+  min-height: 310px;
+  background-color: rgba(4, 0, 255, 0.247);
+}
+
+.popular-devs-list li {
+  width: 220px;
+  height: 145px;
+
+  margin-right: 20px;
+  margin-top: 20px;
+  /*Временно*/
+  outline: 2px dotted rgb(0, 160, 160);
+}
+
+.popular-devs-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .services {
@@ -176,9 +254,12 @@ body.page-catalog {
 
   /*Временно*/
   min-height: 522px;
-  outline: 2px solid rgb(255, 0, 0);
   background-color: rgba(4, 0, 255, 0.438);
 }
+
+
+
+
 
 .about-columns {
   display: flex;
@@ -304,7 +385,7 @@ body.page-catalog {
   outline: 2px dotted rgb(0, 160, 160);
 }
 
-.goods-item:nth-child(3n) {
+.goods-list li:nth-child(3n) {
   margin-right: 0;
 }
 
