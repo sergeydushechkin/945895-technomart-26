@@ -7,6 +7,20 @@ body {
   font-size: 18px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.block {
+  box-sizing: content-box;
+}
+
 body.page-index {
   background-color: white;
   background-image: url("../preview/technomart-index.jpg");
@@ -28,16 +42,15 @@ body.page-catalog {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
 
-  padding: 0 130px; /*ширина страницы 1200*/
+  padding: 0 10px; /*ширина страницы 1200*/
   margin: 0 auto;
 
   outline: 2px dashed green;
 }
 
 .main-header {
-  width: 1200px;
   margin: 0 auto;
   /*Временно*/
   min-height: 320px;
@@ -48,7 +61,7 @@ body.page-catalog {
   background-color: rgba(0, 255, 255, 0.438);
 }
 
-.header-top .container {
+.header-top-wrapper {
   display: flex;
   margin-bottom: 46px;
 }
@@ -325,10 +338,14 @@ body.page-catalog {
 }
 
 .footer-top {
-  display: flex;
+
   /*Временно*/
   min-height: 193px;
   outline: 2px dashed rgb(255, 0, 255);
+}
+
+.footer-top-wrapper {
+  display: flex;
 }
 
 .footer-top-left {
@@ -406,7 +423,7 @@ body.page-catalog {
   background-color: rgba(251, 255, 0, 0.712);
 }
 
-.footer-bottom {
+.footer-bottom-wrapper {
   display: flex;
   justify-content: space-between;
   /*Временно*/
@@ -414,7 +431,7 @@ body.page-catalog {
   outline: 2px dashed rgb(0, 238, 255);
 }
 
-.footer-bottom * {
+.footer-bottom-wrapper * {
   /*Временно*/
   width: 100px;
   margin: 0 10px;
