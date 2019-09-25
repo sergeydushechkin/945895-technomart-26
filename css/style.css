@@ -73,16 +73,47 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  width: 940px;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  padding: 0 130px; /*ширина страницы 1200*/
+html {
+  box-sizing: border-box;
+}
+
+.block {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 960px;
+
+  padding: 0 10px; /*ширина страницы 1200*/
   margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*------------------------ХЕДЕР-----------------------------------------*/
 .main-header {
-  width: 1200px;
   margin: 0 auto;
 
   background-color: #f1f5f7;
@@ -95,7 +126,7 @@ body {
   background-color: #293449;
 }
 
-.header-top .container {
+.header-top-wrapper {
   display: flex;
   margin-bottom: 46px;
 }
@@ -831,7 +862,6 @@ body {
 }
 /*------------------------Каталог. О товарах--------------------------------*/
 .about-goods {
-  margin: 0 auto;
 
   background-color: #f2f6f8;
 }
@@ -845,7 +875,10 @@ body {
 }
 
 .about-goods p {
+  margin: 0;
+
   color: #000000;
+
   font-size: 13px;
   line-height: 24px;
 }
@@ -856,9 +889,11 @@ body {
 }
 
 .footer-top {
-  display: flex;
-
   background-color: #32425c;
+}
+
+.footer-top-wrapper {
+  display: flex;
 }
 
 .footer-top-left {
@@ -931,9 +966,12 @@ body {
 /*------------------------Низ футера-----------------------------------------*/
 
 .footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: #293449;
 }
 
 .footer-bottom p {
@@ -952,7 +990,11 @@ body {
   list-style: none;
 }
 
-.footer-socials li {
+.footer-socials a {
+  display: inline-block;
+
+  font-size: 0;
+
   background-color: #212a3a;
 
   width: 43px;
@@ -961,9 +1003,9 @@ body {
   border-radius: 50%;
 }
 
-.footer-socials li:hover,
-.footer-socials li:focus,
-.footer-socials li:active {
+.footer-socials a:hover,
+.footer-socials a:focus,
+.footer-socials a:active {
   background-color: #ee3643;
 }
 
