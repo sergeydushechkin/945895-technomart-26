@@ -369,11 +369,29 @@ input[type="radio"].visually-hidden {
 /*------------------------Основная.-----------------------------------------*/
 /*---------------------Основаная. Промо--------------------------*/
 .promo {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-top: 59px;
   margin-bottom: 85px;
 
   background-color: #ffffff;
 }
+
+/*Плитки*/
+.promo-small-block {
+  width: 300px;
+  height: 123px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.promo-small-group .promo-small-block,
+.promo .promo-small-block:nth-child(4n) {
+  margin-right: 0;
+}
+
 /*Кнопка*/
 .promo-small-block h3 {
   color: #ffffff;
@@ -403,12 +421,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/*Плитки*/
-.promo-small-block {
-  width: 300px;
-  height: 123px;
-}
-
 .promo-materials {
   background-color: #ffbf47;
 }
@@ -428,7 +440,15 @@ input[type="radio"].visually-hidden {
 .promo-delivery {
   background-color: #ffc047;
 }
+
 /*Промо слайдер*/
+.promo-slider {
+  width: 620px;
+  height: 266px;
+
+  margin-right: 20px;
+}
+
 .promo-slider h3 {
   color: #ffffff;
   font-size: 36px;
@@ -444,6 +464,8 @@ input[type="radio"].visually-hidden {
 }
 /*---------------------Основаная. Популярное--------------------------*/
 .popular-header {
+  margin-top: 20px;
+
   background-color: #f9f5f0;
 }
 
@@ -454,23 +476,64 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 /*---------------------Основаная. Популярные товары--------------------------*/
+.popular-goods {
+  margin-bottom: 20px;
+}
 
+.popular-goods-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-goods-list li {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.popular-goods-list li:nth-child(4n) {
+  margin-right: 0;
+}
 
 /*Карточки товаров см. стили каталога - Перечень товаров*/
 /*---------------------Основаная. Популярные производители--------------------------*/
+.popular-devs {
+  margin-bottom: 85px;
+}
+
 .popular-devs-list {
-  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   list-style: none;
+
+  background-color: #ffffff;
 }
 
 .popular-devs-list li {
   width: 220px;
   height: 145px;
 
+  margin-right: 20px;
+  margin-top: 20px;
+
   text-align: center;
 
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+}
+
+.popular-devs-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-devs-list li:hover,
@@ -758,7 +821,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 0 1px #e5e5e5;
 }
 
-.goods-item:nth-child(3n) {
+.catalog-goods-list .goods-item:nth-child(3n) {
   margin-right: 0;
 }
 

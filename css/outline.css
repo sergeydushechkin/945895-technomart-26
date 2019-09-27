@@ -184,18 +184,18 @@ body.page-catalog {
   background-color: rgba(21, 255, 0, 0.247);
 }
 
-.promo-slider {
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.promo-small-group .promo-small-block {
+.promo-small-group .promo-small-block,
+.promo-small-block:nth-child(3n):not(.promo-small-group) {
   margin-right: 0;
 }
 
 .promo-slider {
   width: 620px;
   height: 266px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   outline: 2px dotted rgb(0, 160, 160);
   background-color: rgba(4, 0, 255, 0.247);
 }
