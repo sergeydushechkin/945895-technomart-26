@@ -554,7 +554,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
   box-shadow: 0 4px 20px 0 rgba(41, 52, 73, 0.5);
 }
-/*---------------------Основаная. Сервисы слайдер--------------------------*/
+/*---------------------Основная. Сервисы слайдер--------------------------*/
 .services {
   margin-bottom: 82px;
 
@@ -582,7 +582,13 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
+.services-slider {
+  display: flex;
+}
+
 .services-buttons {
+  width: 240px;
+
   list-style: none;
 }
 
@@ -604,6 +610,10 @@ input[type="radio"].visually-hidden {
 .services-buttons button:active {
   color: #32425c;
   background-color: #ffffff;
+}
+
+.service-slides {
+  width: 700px;
 }
 /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
