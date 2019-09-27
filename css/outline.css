@@ -164,12 +164,18 @@ body.page-catalog {
 
 
 .promo {
+  display: flex;
   margin-top: 59px;
   margin-bottom: 53px;
 
   /*Временно*/
   min-height: 409px;
   outline: 2px solid rgb(255, 0, 0);
+}
+
+.promo-small-block {
+  width: 300px;
+  height: 123px;
 }
 
 .popular-goods {
