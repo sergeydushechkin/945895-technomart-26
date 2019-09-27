@@ -373,7 +373,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   margin-top: 59px;
-  margin-bottom: 85px;
+  margin-bottom: 33px;
 
   background-color: #ffffff;
 }
@@ -387,13 +387,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.promo-small-group .promo-small-block,
-.promo .promo-small-block:nth-child(4n) {
+.promo-small-group .promo-small-block {
+  margin-right: 0;
+}
+
+.promo .promo-small-block:nth-of-type(3n) {
   margin-right: 0;
 }
 
 /*Кнопка*/
 .promo-small-block h3 {
+  margin: 0;
+
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
@@ -447,6 +452,9 @@ input[type="radio"].visually-hidden {
   height: 266px;
 
   margin-right: 20px;
+  margin-bottom: 20px;
+
+  outline: 2px solid rgb(255, 0, 0);
 }
 
 .promo-slider h3 {
