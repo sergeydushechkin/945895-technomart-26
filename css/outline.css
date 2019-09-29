@@ -168,7 +168,7 @@ body.page-catalog {
   flex-wrap: wrap;
 
   margin-top: 59px;
-  margin-bottom: 53px;
+  margin-bottom: 33px;
 
   /*Временно*/
   min-height: 409px;
@@ -399,8 +399,6 @@ body.page-catalog {
   padding: 0;
 
   list-style: none;
-  /*Временно*/
-  min-height: 994px;
 }
 
 .goods-item {
