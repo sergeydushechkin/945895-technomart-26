@@ -161,8 +161,6 @@ body.page-catalog {
   outline: 2px solid rgb(255, 0, 0);
 }
 
-
-
 .promo {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +231,7 @@ body.page-catalog {
 
 .popular-goods-list li {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .popular-goods-list li:nth-child(4n) {
@@ -284,10 +282,6 @@ body.page-catalog {
   min-height: 522px;
   background-color: rgba(4, 0, 255, 0.438);
 }
-
-
-
-
 
 .about-columns {
   display: flex;
