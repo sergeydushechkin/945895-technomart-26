@@ -120,6 +120,8 @@ input[type="radio"].visually-hidden {
 }
 /*------------------------Верх хедера-----------------------------------------*/
 .header-top {
+  margin-bottom: 45px;
+
   font-size: 17px;
   line-height: 18px;
 
@@ -128,7 +130,6 @@ input[type="radio"].visually-hidden {
 
 .header-top-wrapper {
   display: flex;
-  margin-bottom: 46px;
 }
 
 .header-top-left {
@@ -238,14 +239,20 @@ input[type="radio"].visually-hidden {
   display: block;
   position: relative;
 
-  padding: 12px 0;
-  padding-left: 44px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 43px;
   padding-right: 32px;
 
   color: #ffffff;
   line-height: 18px;
 
   text-decoration: none;
+}
+
+.header-top-favorites,
+.header-top-bin {
+  flex-grow: 1;
 }
 
 .header-top-favorites::before,
@@ -299,6 +306,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top-order {
+  width: 150px;
   padding-left: 20px;
   padding-right: 22px;
 
@@ -320,32 +328,65 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .header-mid * {
-  flex-grow: 1;
+  flex-grow: 0;
   margin: 0;
   padding: 0;
 }
 
 .header-description {
+  width: 260px;
+  padding-top: 4px;
+  padding-left: 52px;
+  margin-right: 45px;
+
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
 }
 
+.header-contacts {
+  width: 270px;
+  margin-right: 36px;
+}
+
 .header-phone {
+  position: relative;
+
+  display: block;
+  padding: 9px;
+  padding-left: 41px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
+  text-align: center;
 
   border: 3px solid #ffffff;
 }
 
+.header-phone::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 13px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+
 .header-address {
+  display: block;
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
@@ -353,7 +394,16 @@ input[type="radio"].visually-hidden {
 }
 
 /*---------------------Кнопки входа--------------------------*/
+.header-login-menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+}
+
 .header-logon {
+  justify-content: flex-end;
+
   font-size: 21px;
   line-height: 21px;
 
@@ -361,9 +411,34 @@ input[type="radio"].visually-hidden {
 }
 
 .header-logon a {
+  display: block;
+  padding: 12px 0;
+
+  height: 45px;
+
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
+}
+
+.header-logon .button-login {
+  position: relative;
+  width: 121px;
+  padding-left: 47px;
+  padding-right: 27px;
+  margin-right: 10px;
+}
+
+.button-login svg {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+
+.header-logon .button-reg {
+  width: 150px;
+  padding-left: 24px;
+  padding-right: 25px;
 }
 
 .header-logon a:hover,
@@ -371,8 +446,16 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
+.button-login:hover path {
+  fill: #32425c;
+}
+
 .header-logon a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.button-login:active path {
+  fill: #c5c5c5;
 }
 
 /*---------------------Пльзователь вошел--------------------------*/
@@ -431,12 +514,23 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
 
   margin: 0;
-  padding: 0 21px;
+  padding: 0;
 
   list-style: none;
 }
 
+.main-nav-list li {
+  flex-grow: 0;
+
+  text-align: center;
+}
+
 .main-nav-list a {
+  display: inline-block;
+  height: 61px;
+
+  padding: 21px 0;
+
   color: #ffffff;
   text-decoration: none;
 }
