@@ -172,6 +172,11 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+/* Проверил в IE цвет меняется */
+.search-input::placeholder {
+  color: white;
+}
+
 .header-form-search svg {
   position: absolute;
   top: 12px;
@@ -215,16 +220,17 @@ input[type="radio"].visually-hidden {
   fill: #ee3643;
   opacity: 1;
 }
-
-.header-form-search .search-input:focus ~ label {
+/* Заменил плейсхоодером, вроде поддержка есть */
+/* .header-form-search .search-input:focus ~ label {
   display: none;
 }
 
 .header-form-search label {
+  display: none;
   position: absolute;
   top: 12px;
   left: 48px;
-}
+} */
 
 .header-top-right {
   display: flex;
@@ -511,25 +517,28 @@ input[type="radio"].visually-hidden {
 
 .main-nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
+  padding-left: 21px;
+  padding-right: 25px;
+
 
   list-style: none;
 }
 
 .main-nav-list li {
-  flex-grow: 0;
+  flex-grow: 1;
 
   text-align: center;
 }
 
 .main-nav-list a {
-  display: inline-block;
-  height: 61px;
-
-  padding: 21px 0;
+  display: block;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 23px;
 
   color: #ffffff;
   text-decoration: none;
