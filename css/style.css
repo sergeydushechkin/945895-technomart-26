@@ -768,7 +768,7 @@ input[type="radio"].visually-hidden {
 }
 /*---------------------Основная. Сервисы слайдер--------------------------*/
 .services {
-  margin-bottom: 82px;
+  margin-bottom: 80px;
 
   background-color: #f4f8f9;
 }
@@ -832,7 +832,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 86px;
+  margin-bottom: 93px;
 
   color: #000000;
 }
@@ -842,25 +842,85 @@ input[type="radio"].visually-hidden {
 }
 
 .about-columns h2 {
+  margin: 0;
+  padding-bottom: 13px;
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: normal;
+  word-spacing: -4px;
 }
 
 .about-columns p {
+  margin-top: 13px;
+  margin-bottom: 24px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
+.about-description p:nth-of-type(1) {
+  word-spacing: 1px;
+}
+
+.about-description p:nth-of-type(2) {
+  padding-right: 130px;
+  letter-spacing: 0.04px;
+  margin-bottom: 21px;
+}
+
 .about-delivery {
+  margin-bottom: 43px;
+  padding-left: 35px;
+
   font-size: 18px;
   line-height: 20px;
   list-style: none;
 }
 
+.about-delivery li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about-delivery li::before {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: -35px;
+
+  width: 25px;
+  height: 3px;
+
+  display: block;
+
+  background-color: #ee3643;
+}
+
+.button-about {
+  padding: 11px 40px;
+}
+
 .about-contacts {
   width: 300px;
+}
+
+.about-contacts p {
+  padding-right: 90px;
+  margin-bottom: 32px;
+}
+
+.about-contacts img {
+  margin-bottom: 39px;
+}
+
+.button-feeback {
+  padding: 11px 0;
+  padding-right: 59px;
+  padding-left: 64px;
 }
 /*------------------------Каталог-----------------------------------------*/
 /*------------------------Каталог. Содержимое-----------------------------------------*/
@@ -1281,14 +1341,14 @@ input[type="radio"].visually-hidden {
 
 .footer-bottom {
   padding-top: 37px;
-  padding-bottom: 22px;
+  padding-bottom: 30px;
 
   font-size: 16px;
   line-height: 18px;
 
 
-  /* background-color: #293449; */
-  background-color: white;
+  background-color: #293449;
+  /* background-color: white; */
 }
 
 .footer-bottom-wrapper {
@@ -1299,6 +1359,7 @@ input[type="radio"].visually-hidden {
 .footer-bottom-wrapper p {
   margin: 0;
   padding: 0;
+  padding-top: 2px;
 }
 
 .footer-bottom-left {
@@ -1342,19 +1403,21 @@ input[type="radio"].visually-hidden {
 
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .footer-social-vk {
   background-image: url("../img/icon-vk.svg");
+  background-position: 7px 13px;
 }
 
 .footer-social-fb {
   background-image: url("../img/icon-fb.svg");
+  background-position: 14px 10px;
 }
 
 .footer-social-insta {
   background-image: url("../img/icon-insta.svg");
+  background-position: 9px 10px;
 }
 
 .footer-socials a:hover,
@@ -1393,3 +1456,5 @@ input[type="radio"].visually-hidden {
 .footer-links:active {
   color: #ee3643;
 }
+
+/*------------------------Модалки-----------------------------------------*/
