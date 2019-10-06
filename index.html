@@ -263,7 +263,7 @@
               Вы можете забрать товар сами,
                 заехав в наш офис:
             </p>
-            <a href=""><img src="img/map.png" alt="Адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158"></a>
+            <a class="button-showmap" href=""><img src="img/map.png" alt="Адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158"></a>
             <a class="button-red button-feeback" href="">Заблудились? Напишите нам!</a>
           </section>
         </div>
@@ -322,27 +322,36 @@
       </div>
     </footer>
     <!--МОДАЛКИ-->
-    <section>
+    <section class="modal-writeus">
       <h2 class="visually-hidden">Форма напишите нам.</h2>
-      <form method="post" action="http://echo.htmlacademy.ru">
-        <p><label for="name">Ваше имя:</label></p>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
-        <p><label for="email">Ваше e-mail:</label></p>
-        <input type="email" name="email" id="email" placeholder="email@example.com" required>
-        <p><label for="text">Текст письма:</label></p>
-        <textarea name="text" cols="50" rows="5" id="text" placeholder="В свободной форме" required></textarea>
+      <form class="modal-writeus-form" method="post" action="http://echo.htmlacademy.ru">
+       <div class="writeus-form-top">
+          <div class="writeus-form-columns">
+            <div class="writeus-half-width">
+              <label for="name">Ваше имя:</label>
+              <input class="writeus-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+            </div>
+            <div class="writeus-half-width">
+              <label for="email">Ваш e-mail:</label>
+              <input class="writeus-email" type="email" name="email" id="email" placeholder="email@example.com" required>
+            </div>
+          </div>
+          <label for="text">Текст письма:</label>
+          <textarea class="writeus-text" name="text" cols="50" rows="5" id="text" placeholder="В свободной форме" required></textarea>
+        </div>
 
-        <div>
-          <button type="submit">Отправить</button>
+        <div class="writeus-form-bottom">
+          <button class="button-red writeus-submit" type="submit">Отправить</button>
         </div>
       </form>
+      <button class="modal-close modal-writeus-close" type="button">Закрыть</button>
     </section>
 
-    <!-- <section>
+    <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться:</h2>
       <img src="img/map-popup.png" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="780">
-      <button type="button">Закрыть</button>
-    </section> -->
+      <button class="modal-close modal-map-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
