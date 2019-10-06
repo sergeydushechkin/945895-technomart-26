@@ -115,7 +115,7 @@ input[type="radio"].visually-hidden {
 /*------------------------ХЕДЕР-----------------------------------------*/
 .main-header {
   margin: 0 auto;
-
+  padding-bottom: 61px;
   background-color: #f1f5f7;
 }
 /*------------------------Верх хедера-----------------------------------------*/
@@ -480,13 +480,43 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.username-buttons a {
-  color: #000000;
-  text-decoration: none;
-}
-
 .username-buttons a:active {
   opacity: 0.3;
+}
+
+.username-buttons a {
+  display: inline-block;
+  padding: 12px 0;
+
+  height: 45px;
+
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.header-user .user-profile {
+  position: relative;
+  width: 121px;
+  padding-left: 47px;
+  padding-right: 27px;
+  margin-right: 10px;
+}
+
+.user-profile svg {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+
+.header-user .user-exit {
+  font-size: 0;
+}
+
+.user-user svg {
+  position: absolute;
+  top: 15px;
+  left: 14px;
 }
 
 .user-menu {
@@ -931,6 +961,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+/*------------------------Каталог. Хлебные крошки---------------------*/
 .breadcrumbs {
   display: flex;
 
@@ -954,6 +985,15 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.breadcrumbs .breadcrumbs-home {
+  display: block;
+  font-size: 0;
+  width: 15px;
+  height: 12px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+}
+/*------------------------Каталог. Заголовок. Сам каталог.---------------------*/
 .catalog-category {
   margin-bottom: 20px;
 
