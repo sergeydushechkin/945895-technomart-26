@@ -455,6 +455,7 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
+.button-login:focus path,
 .button-login:hover path {
   fill: #32425c;
 }
@@ -469,13 +470,15 @@ input[type="radio"].visually-hidden {
 
 /*---------------------Пльзователь вошел--------------------------*/
 .header-user {
-  display: flex;
   flex-direction: column;
 }
 
 .username-buttons {
-  font-size: 21px;
-  line-height: 21px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+  margin-bottom: 8px;
 
   background-color: #ffffff;
 }
@@ -485,11 +488,8 @@ input[type="radio"].visually-hidden {
 }
 
 .username-buttons a {
-  display: inline-block;
-  padding: 12px 0;
-
-  height: 45px;
-
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
@@ -497,33 +497,66 @@ input[type="radio"].visually-hidden {
 
 .header-user .user-profile {
   position: relative;
-  width: 121px;
+  width: 259px;
+  padding-top: 13px;
+  padding-right: 0;
+  padding-bottom: 12px;
   padding-left: 47px;
-  padding-right: 27px;
-  margin-right: 10px;
 }
 
 .user-profile svg {
   position: absolute;
-  top: 15px;
+  top: 14px;
   left: 14px;
 }
 
 .header-user .user-exit {
+  position: relative;
+  width: 40px;
   font-size: 0;
 }
 
-.user-user svg {
+.user-exit svg {
   position: absolute;
   top: 15px;
-  left: 14px;
+  left: 9px;
+}
+
+.user-profile:hover path,
+.user-exit:hover path,
+.user-profile:focus path,
+.user-exit:focus path {
+  fill: #32425c;
+}
+
+.user-profile a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-profile:active path,
+.user-exit:active path {
+  fill: #c5c5c5;
 }
 
 .user-menu {
+  padding-left: 18px;
   font-size: 16px;
   line-height: 18px;
 
   list-style: none;
+}
+
+.user-menu li {
+  display: inline-block;
+}
+
+.user-menu-separator {
+  margin: 0 10px;
+  margin-bottom: 3px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
 }
 
 .user-menu a {
