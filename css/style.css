@@ -996,10 +996,9 @@ input[type="radio"].visually-hidden {
 
 /*------------------------Каталог. Хлебные крошки---------------------*/
 .breadcrumbs {
-  display: flex;
-
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 20px;
+  margin-bottom: 21px;
+  margin-left: -2px;
   padding: 0;
 
   font-size: 13px;
@@ -1009,7 +1008,28 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li {
+  position: relative;
+  margin-right: 38px;
   display: inline-block;
+}
+
+.breadcrumbs li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  width: 9px;
+  height: 9px;
+
+  border: 1px solid #d0d4da;
+  border-bottom: none;
+  border-left: none;
+
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:first-child::before {
+  display: none;
 }
 
 .breadcrumbs a {
@@ -1028,13 +1048,15 @@ input[type="radio"].visually-hidden {
 }
 /*------------------------Каталог. Заголовок. Сам каталог.---------------------*/
 .catalog-category {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  padding: 30px 27px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: -0.7px;
 
   background-color: #f2f6f8;
 }
@@ -1052,7 +1074,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.filters h2 {
+.filters h2,
+.sorting h2 {
+  margin: 0;
+  padding: 10px 0;
+  padding-left: 19px;
+
   color: #000000;
   font-size: 13px;
   line-height: 18px;
@@ -1103,13 +1130,15 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 1px solid #e5e5e5;
 }
-/*------------------------Каталог. Правая часть----------------------*/
-/*------------------------Каталог. Фильтры. Сортировка----------------------*/
+/*------------------------Каталог. Правая часть----------------*/
 .catalog-area-right {
   width: 700px;
 }
-
+/*------------------------Каталог. Фильтры. Сортировка---------*/
 .sorting {
+  display: flex;
+
+  width: 700px;
   margin-bottom: 20px;
 
   background-color: #f7f3ec;
@@ -1118,14 +1147,29 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.sorting-sortby {
+.sorting-options {
+  display: flex;
+  margin-left: auto;
+}
+
+.sorting-sortby,
+.sorting-order {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.sorting-sortby {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 26px;
+  width: 405px;
+}
+
 .sorting-sortby a {
+  line-height: 38px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration-color: #ee3643;
   text-decoration-line: underline;
@@ -1142,6 +1186,33 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
   text-decoration: none;
 }
+
+.sorting-order {
+  font-size: 0;
+  width: 80px;
+}
+
+.sorting-order a {
+  display: inline-block;
+  position: absolute;
+  line-height: 38px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-right: none;
+  border-left: 10px solid #ee3643;
+}
+
+.sorting-order .sort-asc {
+  margin-right: 10px;
+  transform: rotate(-90deg);
+}
+
+.sorting-order .sort-desc {
+  transform: rotate(90deg);
+}
+
+
 /*------------------------Каталог, Основная. Перечень товаров---------------*/
 .goods {
   margin-bottom: 32px;
