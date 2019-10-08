@@ -1145,6 +1145,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .multirange-minbutton {
@@ -1249,6 +1250,7 @@ input[type="radio"].visually-hidden {
 
 .filter-devs-item:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+  cursor: unset;
 }
 
 .filter-devs-item:disabled + label::before {
@@ -1293,6 +1295,7 @@ input[type="radio"].visually-hidden {
 
 .filter-power-item:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+  cursor: unset;
 }
 
 .filter-power-item:disabled + label::before {
@@ -1312,6 +1315,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  cursor: pointer;
 }
 /*------------------------Каталог. Правая часть----------------*/
 .catalog-area-right {
