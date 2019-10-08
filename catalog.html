@@ -98,52 +98,59 @@
             <h2>Фильтр:</h2>
             <!--Каталог. Фильтр по цене. Левая часть-->
             <form class="form-filter" method="get" action="http://echo.htmlacademy.ru">
-              <label for="price">Цена:</label>
-              <input type="range" name="price" id="price" min="0" max="30000">
-              <p>
-                <input type="text" name="price_min" value="0">
-                -
-                <input type="text" name="price_max" value="30000">
-              </p>
-              <hr>
+              <fieldset class="price-range">
+                <legend>Цена:</legend>
+                <div class="price-multirange">
+                  <div class="price-multirange-scale">
+                    <div class="price-multirange-active">
+                        <button class="multirange-button multirange-minbutton" type="button">Минимум</button>
+                        <button class="multirange-button multirange-maxbutton" type="button">Максимум</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-range-inputs">
+                  <input type="text" name="price_min" value="0">
+                  –
+                  <input type="text" name="price_max" value="30000">
+                </div>
+              </fieldset>
               <!--Каталог. Фильтр чекбоксы. Производители-->
               <div class="filter-switches">
                 <fieldset class="filter-devs">
-                  <legend><b>Производители:</b></legend>
-                  <ul>
+                  <legend>Производители:</legend>
+                  <ul class="filter-devs-list">
                     <li>
-                      <input type="checkbox" id="bosch" name="bosch" checked>
+                      <input class="filter-devs-item" type="checkbox" id="bosch" name="bosch" checked>
                       <label for="bosch">Bosch</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="interskol" name="interskol" disabled>
+                      <input class="filter-devs-item" type="checkbox" id="interskol" name="interskol" disabled>
                       <label for="interskol">Интерскол</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="makita" name="makita" checked>
+                      <input class="filter-devs-item" type="checkbox" id="makita" name="makita" checked>
                       <label for="makita">Makita</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="dewalt" name="dewalt">
+                      <input class="filter-devs-item" type="checkbox" id="dewalt" name="dewalt">
                       <label for="dewalt">DeWalt</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="hitachi" name="hitachi">
+                      <input class="filter-devs-item" type="checkbox" id="hitachi" name="hitachi">
                       <label for="hitachi">Hitachi</label>
                     </li>
                   </ul>
                 </fieldset>
-                <hr>
                 <!--Каталог. Фильтр переключатели. Питание-->
                 <fieldset class="filter-power">
-                  <legend><b>Питание:</b></legend>
-                  <ul>
+                  <legend>Питание:</legend>
+                  <ul class="filter-power-list">
                     <li>
-                      <input type="radio" id="accum" name="power" checked>
+                      <input class="filter-power-item" type="radio" id="accum" name="power" checked>
                       <label for="accum">Аккумуляторные</label>
                     </li>
                     <li>
-                      <input type="radio" id="cable" name="power">
+                      <input class="filter-power-item" type="radio" id="cable" name="power">
                       <label for="cable">Сетевые</label>
                     </li>
                   </ul>

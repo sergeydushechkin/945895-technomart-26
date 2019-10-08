@@ -1089,29 +1089,93 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
   border-radius: 3px;
 }
-/*------------------------Каталог. Фильтры. По цене-------------------------*/
-.form-filter input {
-  background-color: #f7f3ec;
+
+.filters h2 {
+  margin-bottom: 12px;
 }
 
-.form-filter .price {
+.form-filter fieldset {
+  margin: 0;
+  padding: 0;
+
+  padding-bottom: 26px;
+  margin-bottom: 16px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form-filter legend {
+  margin-bottom: 14px;
   font-size: 17px;
   line-height: 30px;
-  font-weight: bold;
   text-transform: uppercase;
+  font-weight: bold;
+}
+/*------------------------Каталог. Фильтры. По цене.-------------------------*/
+.price-multirange {
+  margin-bottom: 9px;
+  padding: 39px 0;
+  padding-left: 21px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
-.form-filter input[type="text"] {
+.price-multirange-scale {
+  position: relative;
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.price-multirange-scale .price-multirange-active {
+  position: absolute;
+  width: 151px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.multirange-button {
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 23px;
+  font-size: 0;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+.multirange-minbutton {
+  left: 0;
+}
+
+.multirange-maxbutton {
+  left: 140px;
+}
+
+.price-range-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-range-inputs input {
+  width: 95px;
+  padding: 9px 5px;
+  padding-left: 10px;
+
+  text-align: center;
+
+  background-color: #f7f3ec;
   border: none;
 }
 /*------------------------Каталог. Фильтры. Переключатели-------------------*/
-.filter-switches legend {
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .filter-switches ul {
+  margin: 0;
+  padding: 0;
+
   color: #000000;
   font-size: 15px;
   line-height: 20px;
@@ -1120,15 +1184,125 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.filter-switches fieldset {
+.filter-switches .filter-devs {
+  padding-bottom: 22px;
+  margin-bottom: 18px;
+}
+
+.filter-switches li {
+  padding-left: 34px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+
+.filter-devs-list li:last-child,
+.filter-power-list li:last-child {
+  margin-bottom: 0;
+}
+
+.filter-switches input {
+  display: none;
+}
+
+.filter-switches label {
+  position: relative;
+
+  display: block;
+
+  color: #000000;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Чекбоксы */
+.filter-devs-item + label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -33px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-devs-item:not(:checked) + label::before {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-devs-item:hover:not(:checked) + label::before,
+.filter-devs-item:focus:not(:checked) + label::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.filter-devs-item:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-devs-item:hover:checked + label::before,
+.filter-devs-item:focus:checked + label::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.filter-devs-item:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-devs-item:disabled + label::before {
+  opacity: 0.3;
+}
+
+/* Радио кнопки */
+.filter-switches .filter-power {
+  padding-bottom: 0;
+  margin-bottom: 78px;
   border: none;
 }
 
-.filter-devs input[type="checkbox"]:disabled ~ label {
-  opacity: 0.4;
+.filter-power-item + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -35px;
+
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
 }
 
+.filter-power-item:not(:checked) + label::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter-power-item:hover:not(:checked) + label::before,
+.filter-power-item:focus:not(:checked) + label::before {
+  background-image: url("../img/radio-off-hover.svg");
+}
+
+.filter-power-item:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-power-item:hover:checked + label::before,
+.filter-power-item:focus:checked + label::before {
+  background-image: url("../img/radio-on-hover.svg");
+}
+
+.filter-power-item:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-power-item:disabled + label::before {
+  opacity: 0.3;
+}
+
+/* Кнопка показать */
 .filter-showbutton {
+  padding: 9px 38px;
+
   color: #000000;
   font-size: 13px;
   line-height: 18px;
@@ -1137,6 +1311,7 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 /*------------------------Каталог. Правая часть----------------*/
 .catalog-area-right {
@@ -1276,7 +1451,7 @@ input[type="radio"].visually-hidden {
   width: 218px;
   height: 318px;
 
-  margin-right: 20px;
+  margin-right: 23px;
   margin-bottom: 20px;
 
   box-shadow: 0 0 0 1px #e5e5e5;
@@ -1369,11 +1544,14 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
+.filter-showbutton:hover,
+.filter-showbutton:focus,
 .pagination-item:hover,
 .pagination-item:focus {
   border-color: #bdc6ca;
 }
 
+.filter-showbutton:active,
 .pagination-item:active {
   border-color: #ee3643;
 }
