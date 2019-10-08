@@ -1087,10 +1087,18 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #f7f3ec;
+  border-radius: 3px;
 }
 /*------------------------Каталог. Фильтры. По цене-------------------------*/
 .form-filter input {
   background-color: #f7f3ec;
+}
+
+.form-filter .price {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .form-filter input[type="text"] {
@@ -1141,10 +1149,12 @@ input[type="radio"].visually-hidden {
   width: 700px;
   margin-bottom: 20px;
 
-  background-color: #f7f3ec;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
 .sorting-options {
