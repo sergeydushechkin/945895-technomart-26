@@ -115,7 +115,7 @@ input[type="radio"].visually-hidden {
 /*------------------------ХЕДЕР-----------------------------------------*/
 .main-header {
   margin: 0 auto;
-  padding-bottom: 61px;
+  padding-bottom: 60px;
   background-color: #f1f5f7;
 }
 /*------------------------Верх хедера-----------------------------------------*/
@@ -337,7 +337,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .header-mid * {
@@ -1164,7 +1164,7 @@ input[type="radio"].visually-hidden {
 .sorting-sortby {
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 26px;
+  padding: 0 25px;
   width: 405px;
 }
 
@@ -1182,37 +1182,53 @@ input[type="radio"].visually-hidden {
   text-decoration-style: solid;
 }
 
-.sorting-sortby a:active {
-  color: #ee3643;
-  text-decoration: none;
-}
-
 .sorting-order {
-  font-size: 0;
   width: 80px;
 }
 
+.sorting-order .hide {
+  font-size: 0;
+}
+
 .sorting-order a {
-  display: inline-block;
-  position: absolute;
+  position: relative;
+  padding-left: 18px;
+
+  font-size: 0;
   line-height: 38px;
+  color: #c5c5c5;
+
+  text-decoration: none;
+  /* Через border
   width: 0;
   height: 0;
   border: 5px solid transparent;
   border-right: none;
-  border-left: 10px solid #ee3643;
+  border-left: 10px solid #ee3643; */
 }
 
-.sorting-order .sort-asc {
-  margin-right: 10px;
-  transform: rotate(-90deg);
+.sorting-order .sort-asc::after,
+.sorting-order .sort-desc::after {
+  position: absolute;
+  content: "\25B2";
+  font-size: 15px;
 }
 
-.sorting-order .sort-desc {
-  transform: rotate(90deg);
+.sorting-order .sort-desc::after {
+  left: 32px;
+  content: "\25BC";
 }
 
+.sorting-order a:hover::after,
+.sorting-order a:focus::after {
+  color: #231f20;
+}
 
+.sorting-options a.sort-active,
+.sorting-options a.sort-active::after {
+  color: #ee3643;
+  text-decoration: none;
+}
 /*------------------------Каталог, Основная. Перечень товаров---------------*/
 .goods {
   margin-bottom: 32px;
