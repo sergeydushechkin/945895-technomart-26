@@ -1383,9 +1383,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
 
-  padding-left: 18px;
+  margin-left: 18px;
 
-  font-size: 0;
+  font-size: 15px;
   line-height: 38px;
   color: #c5c5c5;
 
@@ -1398,28 +1398,17 @@ input[type="radio"].visually-hidden {
   border-left: 10px solid #ee3643; */
 }
 
-.sorting-order .sort-asc::after,
-.sorting-order .sort-desc::after {
-  position: absolute;
-  content: "\25B2";
-  font-size: 15px;
-}
-
-.sorting-order .sort-desc::after {
-  left: 32px;
-  content: "\25BC";
-}
-
-.sorting-order a:hover::after,
-.sorting-order a:focus::after {
+.sorting-order a:hover,
+.sorting-order a:focus {
   color: #231f20;
 }
 
-.sorting-options a.sort-active,
-.sorting-options a.sort-active::after {
+
+.sorting-options a.sort-active {
   color: #ee3643;
   text-decoration: none;
 }
+
 /*------------------------Каталог, Основная. Перечень товаров---------------*/
 .goods {
   margin-bottom: 32px;
@@ -1514,7 +1503,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-discount {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   min-height: 18px;
   color: #999999;
   text-decoration: line-through;
@@ -1914,24 +1903,42 @@ input[type="radio"].visually-hidden {
 }
 
 /*------------------------Модалки-------------------------------------*/
-/*------------------------Модалки.Сообщите нам.-----------------------*/
-.modal-writeus {
+.modal-dialog {
   position: fixed;
-  top: calc(50% - 215px);
-  left: calc(50% - 310px);
   display: none;
 
   width: 620px;
-  height: 430px;
-
 
   background-color: #ffffff;
 
   box-shadow: 0 7px 0 0 #ff5257 inset,
     0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 20;
+}
+
+.modal-dialog-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  margin: 0;
+  padding-top: 37px;
+  width: 100%;
+  height: 112px;
+
+  background-color: #f4f4f4;
+}
+/*------------------------Модалки.Сообщите нам.-----------------------*/
+.modal-writeus {
+  top: calc(50% - 215px);
+  left: calc(50% - 310px);
+
+  height: 430px;
 }
 
 .modal-writeus-form {
+  position: relative;
+  height: 100%;
   padding-top: 32px;
 }
 
@@ -1979,18 +1986,6 @@ input[type="radio"].visually-hidden {
 
 .writeus-form-columns .writeus-half-width:first-child {
   margin-right: 20px;
-}
-
-.writeus-form-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  padding-top: 37px;
-  width: 100%;
-  height: 112px;
-
-  background-color: #f4f4f4;
 }
 
 .writeus-submit {
@@ -2052,6 +2047,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 
   box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  z-index: 20;
 }
 
 .modal-map img {
@@ -2063,6 +2059,81 @@ input[type="radio"].visually-hidden {
   right: 33px;
 }
 
+/*----------------Модалки.Товар добавлен в корзину.------------*/
+.modal-cart {
+  display: none;
+  top: calc(50% - 141px);
+  left: calc(50% - 310px);
+
+  height: 282px;
+}
+
+.modal-cart-wrapper {
+  position: relative;
+  height: 100%;
+  padding-top: 72px;
+}
+
+.modal-cart p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 55px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.modal-cart p::before {
+  content: "";
+  position: absolute;
+
+  top: -17px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+}
+
+.modal-cart-bottom {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.modal-cart-bottom a {
+  display: block;
+
+  padding: 11px 10px;
+  padding-bottom: 9px;
+
+  width: 220px;
+}
+
+.modal-cart-bottom .button-red.cart-button-white {
+  margin-left: 20px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-cart-bottom .button-red.cart-button-white:hover,
+.modal-cart-bottom .button-red.cart-button-white:focus {
+  background-color: #fbf9f9;
+}
+
+.modal-cart-bottom .button-red.cart-button-white:active {
+  background-color: #ebe9e9;
+}
+
+.modal-cart-close {
+  top: 24px;
+  right: 33px;
+}
+/*-----Должен быть всегода внизу------*/
 .modal-show {
   display: block;
 }
