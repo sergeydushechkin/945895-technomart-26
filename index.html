@@ -322,7 +322,7 @@
       </div>
     </footer>
     <!--МОДАЛКИ-->
-    <section class="modal-writeus">
+    <section class="modal-dialog modal-writeus">
       <h2 class="visually-hidden">Форма напишите нам.</h2>
       <form class="modal-writeus-form" method="post" action="http://echo.htmlacademy.ru">
        <div class="writeus-form-top">
@@ -340,7 +340,7 @@
           <textarea class="writeus-text" name="text" cols="50" rows="5" id="text" placeholder="В свободной форме" required></textarea>
         </div>
 
-        <div class="writeus-form-bottom">
+        <div class="modal-dialog-bottom writeus-form-bottom">
           <button class="button-red writeus-submit" type="submit">Отправить</button>
         </div>
       </form>
@@ -353,7 +353,19 @@
       <button class="modal-close modal-map-close" type="button">Закрыть</button>
     </section>
 
-    <script src="js/writeusmodal.js"></script>
-    <script src="js/mapmodal.js"></script>
+    <section class="modal-dialog modal-cart">
+      <h2 class="visually-hidden">Диалоговое окно: товар добавлен в корзину</h2>
+      <div class="modal-cart-wrapper">
+        <p>Товар добавлен в корзину!</p>
+        <ul class="modal-dialog-bottom modal-cart-bottom">
+          <li><a class="button-red" href="">Оформить заказ</a></li>
+          <li><a class="button-red cart-button-white" href="">Продолжить покупки</a></li>
+        </ul>
+        <button class="modal-close modal-cart-close" type="button">Закрыть</button>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
