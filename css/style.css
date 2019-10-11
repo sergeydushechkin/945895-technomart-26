@@ -583,6 +583,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
@@ -602,7 +603,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav-list a {
   display: block;
-  padding: 0;
+  padding: 0 10px;
   padding-top: 20px;
   padding-bottom: 23px;
 
@@ -656,11 +657,14 @@ input[type="radio"].visually-hidden {
 
 /*Плитки*/
 .promo-small-block {
+  position: relative;
   width: 300px;
   height: 123px;
 
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-top: 21px;
+  padding-left: 24px;
 }
 
 .promo-small-group .promo-small-block {
@@ -674,6 +678,8 @@ input[type="radio"].visually-hidden {
 /*Кнопка*/
 .promo-small-block h3 {
   margin: 0;
+  margin-left: -2px;
+  margin-bottom: 13px;
 
   color: #ffffff;
   font-size: 24px;
@@ -682,6 +688,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-small-block a {
+  width: 135px;
+  display: inline-block;
+  padding: 10px 10px;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -702,24 +711,64 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.promo-small-block::after {
+  content: "";
+  position: absolute;
+
+  width: 80px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+}
+
 .promo-materials {
   background-color: #ffbf47;
+}
+
+.promo-materials::after {
+  top: 31px;
+  left: 213px;
+  background-image: url("../img/icon-1.svg");
 }
 
 .promo-instruments {
   background-color: #3bbce3;
 }
 
+.promo-instruments::after {
+  top: 33px;
+  left: 197px;
+  background-image: url("../img/icon-2.svg");
+}
+
 .promo-technics {
   background-color: #dc91d8;
+}
+
+.promo-technics::after {
+  top: 31px;
+  left: 191px;
+  background-image: url("../img/icon-3.svg");
 }
 
 .promo-discounts {
   background-color: #8ed78f;
 }
 
+.promo-discounts::after {
+  top: 26px;
+  left: 196px;
+  background-image: url("../img/icon-4.svg");
+}
+
 .promo-delivery {
   background-color: #ffc047;
+}
+
+.promo-delivery::after {
+  top: 32px;
+  left: 191px;
+  background-image: url("../img/icon-5.svg");
 }
 
 /*Промо слайдер*/
@@ -748,16 +797,29 @@ input[type="radio"].visually-hidden {
 }
 /*---------------------Основаная. Популярное--------------------------*/
 .popular-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
+  padding-left: 27px;
+  padding-right: 24px;
 
   background-color: #f9f5f0;
 }
 
 .popular-header h2 {
+  margin: 0;
+  padding: 30px 0;
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: -0.8px;
+}
+
+.button-popular {
+  padding: 10px 55px;
 }
 /*---------------------Основаная. Популярные товары--------------------------*/
 .popular-goods {
@@ -790,9 +852,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 85px;
 }
 
+.button-devs {
+  padding: 10px 70px;
+}
+
 .popular-devs-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   margin: 0;
   margin-bottom: 20px;
@@ -803,7 +870,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.popular-devs-list li {
+.popular-devs-item {
+  position: relative;
   width: 220px;
   height: 145px;
 
@@ -811,27 +879,44 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
 
   text-align: center;
+  vertical-align: bottom;
 
   background-color: #ffffff;
   border: 1px solid #ebebeb;
 }
 
-.popular-devs-list li:nth-child(4n) {
+.popular-devs-item img {
+  position: absolute;
+  line-height: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.popular-devs-list .popular-devs-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.popular-devs-list li:hover,
-.popular-devs-list li:focus {
+.popular-devs-item:hover,
+.popular-devs-item:focus {
   border: none;
-  box-shadow: 0 10px 20px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.popular-devs-list li:active {
+.popular-devs-item:active img {
   opacity: 0.3;
-  box-shadow: 0 4px 20px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-devs-item:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 /*---------------------Основная. Сервисы слайдер--------------------------*/
 .services {
+  padding-top: 40px;
+  padding-bottom: 10px;
+
   margin-bottom: 80px;
 
   background-color: #f4f8f9;
@@ -842,6 +927,7 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: -0.9px;
 }
 
 .services h3 {
@@ -997,7 +1083,7 @@ input[type="radio"].visually-hidden {
 /*------------------------Каталог. Хлебные крошки---------------------*/
 .breadcrumbs {
   margin-top: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   margin-left: -2px;
   padding: 0;
 
@@ -1040,15 +1126,27 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs .breadcrumbs-home {
   display: block;
+  position: relative;
+  padding-right: 14px;
   font-size: 0;
+}
+
+.breadcrumbs .breadcrumbs-home::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+
   width: 15px;
   height: 12px;
+
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
 }
 /*------------------------Каталог. Заголовок. Сам каталог.---------------------*/
 .catalog-category {
-  margin-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 20px;
   padding: 30px 27px;
 
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1411,7 +1509,7 @@ input[type="radio"].visually-hidden {
 
 /*------------------------Каталог, Основная. Перечень товаров---------------*/
 .goods {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .goods-list {
@@ -1439,7 +1537,7 @@ input[type="radio"].visually-hidden {
   width: 218px;
   height: 318px;
 
-  margin-right: 23px;
+  margin-right: 22px;
   margin-bottom: 20px;
 
   box-shadow: 0 0 0 1px #e5e5e5;
@@ -1460,6 +1558,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.promo-new-marker,
 .goods-new-marker {
   position: absolute;
 
@@ -1475,6 +1574,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-image {
+  width: 100%;
   margin-bottom: 3px;
   background-color: #ffffff;
 }
@@ -1486,7 +1586,7 @@ input[type="radio"].visually-hidden {
 .goods-name h3 {
   margin: 0;
   margin-bottom: 12px;
-  padding: 0 15px;
+  padding: 0 20px;
 
   color: #000000;
   font-size: 18px;
@@ -1503,7 +1603,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-discount {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   min-height: 18px;
   color: #999999;
   text-decoration: line-through;
@@ -1623,6 +1723,7 @@ input[type="radio"].visually-hidden {
 /* Окончание попапа на товарах */
 /*------------------------Каталог. Пагинация--------------------------------*/
 .goods-pagination {
+  display: flex;
   margin: 0;
   padding: 0;
 
@@ -1630,11 +1731,17 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item {
+  display: inline-block;
+  padding: 11px 14px;
+  margin-right: 11px;
+
   color: #000000;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
+  text-transform: uppercase;
 
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -1658,9 +1765,14 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   border-color: #ee3643;
 }
+
+.pagination-next {
+  padding: 11px 31px;
+}
 /*------------------------Каталог. О товарах--------------------------------*/
 .about-goods {
-
+  padding-top: 40px;
+  padding-bottom: 69px;
   background-color: #f2f6f8;
 }
 
@@ -1669,6 +1781,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-size: 30px;
   line-height: 30px;
+  letter-spacing: -0.6px;
   text-transform: uppercase;
 }
 
@@ -1679,6 +1792,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 13px;
   line-height: 24px;
+  word-spacing: 1.4px;
 }
 /*------------------------ФУТЕР-----------------------------------------*/
 /*------------------------Верх футера-----------------------------------------*/
@@ -1688,7 +1802,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top {
   background-color: #32425c;
-  padding-bottom: 47px;
+  padding-bottom: 50px;
 }
 
 .footer-top-wrapper {
@@ -1785,7 +1899,7 @@ input[type="radio"].visually-hidden {
 /*------------------------Низ футера-----------------------------------------*/
 
 .footer-bottom {
-  padding-top: 37px;
+  padding-top: 35px;
   padding-bottom: 30px;
 
   font-size: 16px;
