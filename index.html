@@ -93,13 +93,27 @@
             <a href="">Для стройки</a>
           </div>
           <div class="promo-slider">
-            <button type="button">Назад</button>
-            <button type="button">Вперед</button>
-            <div>
+            <div class="promo-slider-controls">
+              <button type="button">Назад</button>
+              <button type="button">Вперед</button>
+              <fieldset>
+                <legend>Переключение слайдеров</legend>
+                <input class="promo-slider-radio1" type="radio" id="promo-slider-radio1" name="promo-slider-radio">
+                <label for="promo-slider-radio1">Перфораторы</label>
+                <input class="promo-slider-radio2" type="radio" id="promo-slider-radio2" name="promo-slider-radio">
+                <laber for="promo-slider-radio2">Дрели</laber>
+              </fieldset>
+            </div>
+            <div class="promo-slider-slide1">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button-red button-promo-slider" href="catalog.html">Открыть каталог</a>
+            </div>
+            <!-- <div class="promo-slider-slide2">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
-              <a href="catalog.html">Открыть каталог</a>
-            </div>
+              <a class="button-red button-promo-slider" href="catalog.html">Открыть каталог</a>
+            </div> -->
           </div>
           <div class="promo-small-group">
             <div class="promo-small-block promo-discounts">
@@ -199,7 +213,7 @@
       </div>
       <!--Сервисы слайдер-->
       <section class="services">
-        <div class="container">
+        <div class="container services-container">
           <div class="services-description">
             <h2>Сервисы</h2>
             <p>
@@ -208,36 +222,42 @@
             </p>
           </div>
           <div class="services-slider">
+            <input class="visually-hidden" type="radio" id="services-select-delivery" name="services-checkboxes" checked>
+            <input class="visually-hidden" type="radio" id="services-select-guarantee" name="services-checkboxes">
+            <input class="visually-hidden" type="radio" id="services-select-credit" name="services-checkboxes">
             <ul class="services-buttons">
-              <li><button type="button">Доставка</button></li>
+              <li><label class="service-button services-button-delivery" for="services-select-delivery">Доставка</label></li>
+              <li><label class="service-button services-button-guarantee" for="services-select-guarantee">Гарантия</label></li>
+              <li><label class="service-button services-button-credit" for="services-select-credit">Кредит</label></li>
+              <!-- <li><button type="button">Доставка</button></li>
               <li><button type="button">Гарантия</button></li>
-              <li><button type="button">Кредит</button></li>
+              <li><button type="button">Кредит</button></li> -->
             </ul>
             <div class="service-slides">
-              <div class="services-delievery">
+              <!-- <div class="services-delievery">
                 <h3>Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
                 </p>
-              </div>
+              </div> -->
               <!-- <div class="services-guarantee">
                 <h3>Гарантия</h3>
                 <p>
-                  Если купленный у нас товар поломается или заискрит,
-                  а также в случае пожара, спровоцированного его возгоранием,
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгоранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                   Дом уж восстановите как-нибудь сами.
                 </p>
-              </div>
+              </div> -->
               <div class="services-credit">
                 <h3>Кредит</h3>
                 <p>
-                  Залезть в долговую яму стало проще!
+                  Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
-                <a class="button-red" href="">Отправить заявку</a>
-              </div> -->
+                <a class="button-red button-credit" href="">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>

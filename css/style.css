@@ -773,6 +773,7 @@ input[type="radio"].visually-hidden {
 
 /*Промо слайдер*/
 .promo-slider {
+  position: relative;
   width: 620px;
   height: 266px;
 
@@ -783,6 +784,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider h3 {
+  margin: 0;
+  padding-top: 23px;
+  padding-left: 24px;
+
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
@@ -791,9 +796,31 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider p {
+  margin: 0;
+  margin-bottom: 129px;
+  padding-left: 25px;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
+}
+
+.promo-slider-controls {
+  position: absolute;
+  display: none;
+}
+
+.promo-slider-slide1 {
+  width: 100%;
+  height: 100%;
+  background-color: #ab9a86;
+  background-image: url("../img/promo-slide1.jpg");
+  background-repeat: no-repeat;
+}
+
+.button-promo-slider {
+  margin-left: 26px;
+  padding: 11px 47px;
 }
 /*---------------------Основаная. Популярное--------------------------*/
 .popular-header {
@@ -915,11 +942,18 @@ input[type="radio"].visually-hidden {
 /*---------------------Основная. Сервисы слайдер--------------------------*/
 .services {
   padding-top: 40px;
-  padding-bottom: 10px;
 
   margin-bottom: 80px;
 
   background-color: #f4f8f9;
+}
+
+.container.services-container {
+  padding-right: 0;
+}
+
+.services-description {
+  margin-bottom: 32px;
 }
 
 .services h2 {
@@ -931,10 +965,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services h3 {
+  margin-bottom: 24px;
   color: #32425c;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  letter-spacing: -0.7px;
 }
 
 .services p {
@@ -949,33 +985,88 @@ input[type="radio"].visually-hidden {
 }
 
 .services-buttons {
+  margin-top: 39px;
+  padding: 0;
+
   width: 240px;
 
   list-style: none;
 }
 
-.services-buttons button {
+.service-button {
+  display: inline-block;
+  width: 100%;
+  min-height: 62px;
+  padding: 14px 21px;
+
   color: #ffffff;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
+  text-align: left;
 
   background-color: #32425c;
   border: none;
+  box-shadow: 0 1px 0 0 #405069 inset, 0 -1px 0 0 #293449 inset;
 }
 
-.services-buttons button:hover,
-.services-buttons .button-red:focus {
+.service-button:hover,
+.button-red:focus {
   background-color: #293449;
 }
 
-.services-buttons button:active {
+.services-button-delivery {
   color: #32425c;
   background-color: #ffffff;
+  box-shadow: none;
 }
 
 .service-slides {
-  width: 700px;
+  width: 710px;
+  padding-left: 80px;
+  min-height: 323px;
+}
+
+.services-delievery {
+  padding-right: 355px;
+  background-image: url("../img/service-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 93% 26px;
+  padding-bottom: 115px;
+}
+
+.services-guarantee {
+  padding-right: 245px;
+  background-image: url("../img/service-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 99% 3px;
+  padding-bottom: 90px;
+}
+/* Шрифт GillSans невозможно найти, вариант имитации  */
+/* .services-guarantee h3 {
+  letter-spacing: 3.8px;
+  font-style: italic;
+} */
+
+.services-guarantee p {
+  word-spacing: 0.5px;
+}
+
+.services-credit {
+  padding-right: 245px;
+  background-image: url("../img/service-credit.png");
+  background-repeat: no-repeat;
+  background-position: 99% 2px;
+  padding-bottom: 90px;
+}
+
+.services-credit p {
+  padding-bottom: 15px;
+}
+
+.button-credit {
+  display: inline-block;
+  padding: 11px 44px;
 }
 /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
@@ -1018,7 +1109,7 @@ input[type="radio"].visually-hidden {
 .about-description p:nth-of-type(2) {
   padding-right: 130px;
   letter-spacing: 0.04px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .about-delivery {
