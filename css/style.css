@@ -1093,17 +1093,17 @@ input[type="radio"].visually-hidden,
   background-color: #293449;
 }
 
-#services-select-delivery:checked ~ .services-buttons .services-button-delivery,
-#services-select-guarantee:checked ~ .services-buttons .services-button-guarantee,
-#services-select-credit:checked ~ .services-buttons .services-button-credit {
+.services-select-delivery:checked ~ .services-buttons .services-button-delivery,
+.services-select-guarantee:checked ~ .services-buttons .services-button-guarantee,
+.services-select-credit:checked ~ .services-buttons .services-button-credit {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: none;
 }
 
-#services-select-delivery:checked ~ .service-slides .services-delievery,
-#services-select-guarantee:checked ~ .service-slides .services-guarantee,
-#services-select-credit:checked ~ .service-slides .services-credit {
+.services-select-delivery:checked ~ .service-slides .services-delievery,
+.services-select-guarantee:checked ~ .service-slides .services-guarantee,
+.services-select-credit:checked ~ .service-slides .services-credit {
   display: block;
 }
 
