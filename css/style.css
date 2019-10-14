@@ -1014,13 +1014,22 @@ input[type="radio"].visually-hidden,
 
 .service-button:hover,
 .button-red:focus {
+.service-button:focus {
   background-color: #293449;
 }
 
-.services-button-delivery {
+#services-select-delivery:checked ~ .services-buttons .services-button-delivery,
+#services-select-guarantee:checked ~ .services-buttons .services-button-guarantee,
+#services-select-credit:checked ~ .services-buttons .services-button-credit {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: none;
+}
+
+#services-select-delivery:checked ~ .service-slides .services-delievery,
+#services-select-guarantee:checked ~ .service-slides .services-guarantee,
+#services-select-credit:checked ~ .service-slides .services-credit {
+  display: block;
 }
 
 .service-slides {
@@ -1035,6 +1044,7 @@ input[type="radio"].visually-hidden,
   background-repeat: no-repeat;
   background-position: 93% 26px;
   padding-bottom: 115px;
+  display: none;
 }
 
 .services-guarantee {
@@ -1043,6 +1053,7 @@ input[type="radio"].visually-hidden,
   background-repeat: no-repeat;
   background-position: 99% 3px;
   padding-bottom: 90px;
+  display: none;
 }
 /* Шрифт GillSans невозможно найти, вариант имитации  */
 /* .services-guarantee h3 {
