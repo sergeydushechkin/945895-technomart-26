@@ -16,7 +16,7 @@ if (document.querySelector(".modal-map")) {
 
 if (document.querySelector(".modal-writeus")) {
   var writeusmodal = document.querySelector(".modal-writeus");
-  var writeusshowbutton = document.querySelector(".button-feeback");
+  var writeusshowbutton = document.querySelector(".button-feedback");
   var writeusclosebutton = document.querySelector(".modal-writeus-close");
   var writeustext = document.querySelector(".writeus-name");
 
