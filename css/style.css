@@ -135,6 +135,7 @@ input[type="radio"].visually-hidden,
 
 .header-top-left {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
@@ -336,6 +337,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Средняя область хедера-----------------------------------------*/
 .header-mid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-bottom: 39px;
@@ -476,6 +478,7 @@ input[type="radio"].visually-hidden,
 
 .username-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   width: 300px;
@@ -1160,6 +1163,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-bottom: 93px;
@@ -1342,6 +1346,7 @@ input[type="radio"].visually-hidden,
 
 .catalog-area {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-bottom: 60px;
@@ -1603,6 +1608,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. Фильтры. Сортировка---------*/
 .sorting {
   display: flex;
+  flex-wrap: wrap;
 
   width: 700px;
   margin-bottom: 21px;
@@ -1617,12 +1623,14 @@ input[type="radio"].visually-hidden,
 
 .sorting-options {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
 .sorting-sortby,
 .sorting-order {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -1905,6 +1913,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. Пагинация--------------------------------*/
 .goods-pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -1988,11 +1997,13 @@ input[type="radio"].visually-hidden,
 
 .footer-top-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .footer-top-left {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   width: 340px;
@@ -2018,6 +2029,7 @@ input[type="radio"].visually-hidden,
 
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
 
@@ -2116,6 +2128,7 @@ input[type="radio"].visually-hidden,
 
 .footer-socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 
   margin: 0;
@@ -2272,6 +2285,7 @@ input[type="radio"].visually-hidden,
 
 .writeus-form-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -2396,6 +2410,7 @@ input[type="radio"].visually-hidden,
 .modal-cart-bottom {
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
 }
