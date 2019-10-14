@@ -93,27 +93,29 @@
             <a href="">Для стройки</a>
           </div>
           <div class="promo-slider">
-            <div class="promo-slider-controls">
-              <button type="button">Назад</button>
-              <button type="button">Вперед</button>
-              <fieldset>
-                <legend>Переключение слайдеров</legend>
-                <input class="promo-slider-radio1" type="radio" id="promo-slider-radio1" name="promo-slider-radio">
-                <label for="promo-slider-radio1">Перфораторы</label>
+            <fieldset class="promo-slider-controls">
+              <legend class="visually-hidden">Переключение слайдов</legend>
+              <div class="promo-slider-arrows">
+                <button class="promo-slider-arrow promo-slider-back" type="button">Назад</button>
+                <button class="promo-slider-arrow promo-slider-forward" type="button">Вперед</button>
+              </div>
+              <div class="promo-slider-radios">
+                <input class="promo-slider-radio1" type="radio" id="promo-slider-radio1" name="promo-slider-radio" checked>
+                <label class="promo-slider-label1" for="promo-slider-radio1" tabindex="0">Перфораторы</label>
                 <input class="promo-slider-radio2" type="radio" id="promo-slider-radio2" name="promo-slider-radio">
-                <laber for="promo-slider-radio2">Дрели</laber>
-              </fieldset>
-            </div>
-            <div class="promo-slider-slide1">
+                <label class="promo-slider-label2" for="promo-slider-radio2" tabindex="0">Дрели</label>
+              </div>
+            </fieldset>
+            <!-- <div class="promo-slider-slide1">
               <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
               <a class="button-red button-promo-slider" href="catalog.html">Открыть каталог</a>
-            </div>
-            <!-- <div class="promo-slider-slide2">
+            </div> -->
+            <div class="promo-slider-slide2">
               <h3>Дрели</h3>
               <p>Соседям на радость!</p>
               <a class="button-red button-promo-slider" href="catalog.html">Открыть каталог</a>
-            </div> -->
+            </div>
           </div>
           <div class="promo-small-group">
             <div class="promo-small-block promo-discounts">
