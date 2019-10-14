@@ -97,6 +97,8 @@ html {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -1155,13 +1157,17 @@ input[type="radio"].visually-hidden {
 }
 
 .about-contacts img {
+.button-showmap {
+  display: block;
   margin-bottom: 39px;
 }
 
 .button-feeback {
+.button-feedback {
   padding: 11px 0;
   padding-right: 59px;
   padding-left: 64px;
+  padding-left: 63px;
 }
 /*------------------------Каталог-----------------------------------------*/
 /*------------------------Каталог. Содержимое-----------------------------------------*/
