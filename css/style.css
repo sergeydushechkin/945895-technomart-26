@@ -336,7 +336,7 @@ input[type="radio"].visually-hidden,
 .header-top-order {
   width: 150px;
   padding-left: 20px;
-  padding-right: 22px;
+  padding-right: 10px;
 
   background-color: #63a63e;
 }
@@ -2252,6 +2252,46 @@ input[type="radio"].visually-hidden,
 
   background-color: #f4f4f4;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 /*------------------------Модалки.Сообщите нам.-----------------------*/
 .modal-writeus {
   top: calc(50% - 215px);
@@ -2288,10 +2328,15 @@ input[type="radio"].visually-hidden,
   padding: 9px 14px 11px 14px;
 
   font-family: "PT Sans", "Arial", sans-serif;
-  color: #a9a9a9;
+  color: #000000;
   font-size: 13px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+}
+
+.modal-writeus-form input:focus,
+.modal-writeus-form textarea:focus {
+  border-color: #ee3643;
 }
 
 .modal-writeus-form textarea {
@@ -2376,12 +2421,23 @@ input[type="radio"].visually-hidden,
 }
 
 .modal-map img {
+  position: absolute;
   width: 940px;
+  height: 446px;
+  z-index: 1;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 .modal-map-close {
   top: 17px;
   right: 33px;
+  z-index: 5;
 }
 
 /*----------------Модалки.Товар добавлен в корзину.------------*/
@@ -2459,7 +2515,12 @@ input[type="radio"].visually-hidden,
   top: 24px;
   right: 33px;
 }
-/*-----Должен быть всегода внизу------*/
+/*-----Должен быть всегда внизу------*/
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
