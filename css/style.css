@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden,
 }
 
 .header-logo {
-  height: 42px;
+  min-height: 43px;
 }
 
 .header-logo img {
@@ -340,7 +340,7 @@ input[type="radio"].visually-hidden,
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .header-mid * {
@@ -1268,7 +1268,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. Хлебные крошки---------------------*/
 .breadcrumbs {
   margin-top: 20px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   margin-left: -2px;
   padding: 0;
 
