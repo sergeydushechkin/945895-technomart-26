@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden,
 }
 
 .header-logo {
-  min-height: 43px;
+  min-height: 42px;
 }
 
 .header-logo img {
@@ -251,9 +251,9 @@ input[type="radio"].visually-hidden,
   position: relative;
 
   padding-top: 12px;
-  padding-bottom: 13px;
-  padding-left: 43px;
-  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 18px;
 
   color: #ffffff;
   line-height: 18px;
@@ -263,7 +263,7 @@ input[type="radio"].visually-hidden,
 
 .header-top-favorites,
 .header-top-bin {
-  flex-grow: 1;
+  width: 150px;
 }
 
 .header-top-favorites::before,
@@ -284,9 +284,13 @@ input[type="radio"].visually-hidden,
   background-image: url("../img/icon-bookmark.svg");
 }
 
+.header-top-bin {
+  padding-left: 49px;
+}
+
 .header-top-bin::before {
   top: 12px;
-  left: 14px;
+  left: 18px;
 
   background-image: url("../img/icon-cart.svg");
 }
@@ -340,7 +344,7 @@ input[type="radio"].visually-hidden,
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .header-mid * {
@@ -482,7 +486,7 @@ input[type="radio"].visually-hidden,
   justify-content: space-between;
 
   width: 300px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   background-color: #ffffff;
 }
@@ -552,6 +556,7 @@ input[type="radio"].visually-hidden,
 
 .user-menu li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .user-menu-separator {
@@ -701,6 +706,7 @@ input[type="radio"].visually-hidden,
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
@@ -877,6 +883,7 @@ input[type="radio"].visually-hidden,
   height: 10px;
 
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 0;
   border-radius: 50%;
@@ -1024,7 +1031,7 @@ input[type="radio"].visually-hidden,
 .services {
   padding-top: 40px;
 
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 
   background-color: #f4f8f9;
 }
@@ -1034,7 +1041,7 @@ input[type="radio"].visually-hidden,
 }
 
 .services-description {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .services h2 {
@@ -1085,6 +1092,7 @@ input[type="radio"].visually-hidden,
   line-height: 30px;
   font-weight: bold;
   text-align: left;
+  vertical-align: middle;
 
   background-color: #32425c;
   border: none;
@@ -1159,6 +1167,7 @@ input[type="radio"].visually-hidden,
 .button-credit {
   display: inline-block;
   padding: 11px 44px;
+  vertical-align: middle;
 }
 /*------------------------Основная. О компании-----------------------------------------*/
 .about-columns {
@@ -1183,7 +1192,6 @@ input[type="radio"].visually-hidden,
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  word-spacing: -4px;
 }
 
 .about-columns p {
@@ -1268,7 +1276,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. Хлебные крошки---------------------*/
 .breadcrumbs {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: -2px;
   padding: 0;
 
@@ -1282,9 +1290,10 @@ input[type="radio"].visually-hidden,
   position: relative;
   margin-right: 38px;
   display: inline-block;
+  vertical-align: middle;
 }
 
-.breadcrumbs li::before {
+.breadcrumbs li:not(:first-child)::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1299,39 +1308,27 @@ input[type="radio"].visually-hidden,
   transform: rotate(45deg);
 }
 
-.breadcrumbs li:first-child::before {
-  display: none;
-}
-
 .breadcrumbs a {
+  display: inline-block;
+  vertical-align: middle;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .breadcrumbs .breadcrumbs-home {
-  display: block;
   position: relative;
   padding-right: 14px;
   font-size: 0;
-}
-
-.breadcrumbs .breadcrumbs-home::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-
   width: 15px;
-  height: 12px;
-
+  height: 15px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
 }
 /*------------------------Каталог. Заголовок. Сам каталог.---------------------*/
 .catalog-category {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 30px 27px;
 
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1647,15 +1644,14 @@ input[type="radio"].visually-hidden,
 .sorting-sortby a {
   line-height: 38px;
   color: rgba(0, 0, 0, 0.3);
-  text-decoration-color: #ee3643;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-sortby a:hover,
 .sorting-sortby a:focus {
   color: #000000;
-  text-decoration-style: solid;
+  border-bottom-style: solid;
 }
 
 .sorting-order {
@@ -1677,6 +1673,7 @@ input[type="radio"].visually-hidden,
   color: #c5c5c5;
 
   text-decoration: none;
+  vertical-align: middle;
   /* Через border
   width: 0;
   height: 0;
@@ -1693,7 +1690,7 @@ input[type="radio"].visually-hidden,
 
 .sorting-options a.sort-active {
   color: #ee3643;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 /*------------------------Каталог, Основная. Перечень товаров---------------*/
@@ -1850,6 +1847,7 @@ input[type="radio"].visually-hidden,
   text-align: center;
   text-transform: uppercase;
   border-radius: 3px;
+  vertical-align: middle;
 }
 
 .item-popup-buy {
@@ -1992,7 +1990,7 @@ input[type="radio"].visually-hidden,
 
 .footer-top {
   background-color: #32425c;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
 }
 
 .footer-top-wrapper {
@@ -2131,6 +2129,7 @@ input[type="radio"].visually-hidden,
   flex-wrap: wrap;
   justify-content: flex-end;
 
+  width: 135px;
   margin: 0;
   padding: 0;
 
@@ -2156,6 +2155,7 @@ input[type="radio"].visually-hidden,
 
   border-radius: 50%;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .footer-social-vk {
