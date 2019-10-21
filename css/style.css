@@ -922,7 +922,9 @@ input[type="radio"].visually-hidden,
   background-color: #ee3643;
 }
 
-
+.promo-slider-hide {
+  display: none;
+}
 /*---------------------Основаная. Популярное--------------------------*/
 .popular-header {
   display: flex;
@@ -1110,6 +1112,7 @@ input[type="radio"].visually-hidden,
   background-color: #32425c;
   border: none;
   box-shadow: 0 1px 0 0 #405069 inset, 0 -1px 0 0 #293449 inset;
+  cursor: pointer;
 }
 
 .service-button:hover,
