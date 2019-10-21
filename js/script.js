@@ -1,62 +1,3 @@
-// Мольное окно карты
-if (document.querySelector(".modal-map")) {
-  var mapmodal = document.querySelector(".modal-map");
-  var mapshowbutton = document.querySelector(".button-showmap");
-  var mapclosebutton = document.querySelector(".modal-map-close");
-
-  mapshowbutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapmodal.classList.add("modal-show");
-  });
-
-  mapclosebutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapmodal.classList.remove("modal-show");
-  });
-}
-
-// МОдальное окно "Напишите нам"
-if (document.querySelector(".modal-writeus")) {
-  var writeusmodal = document.querySelector(".modal-writeus");
-  var writeusshowbutton = document.querySelector(".button-feedback");
-  var writeusclosebutton = document.querySelector(".modal-writeus-close");
-  var writeustext = document.querySelector(".writeus-name");
-
-  writeusshowbutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    writeusmodal.classList.add("modal-show");
-    writeustext.focus();
-  });
-
-  writeusclosebutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    writeusmodal.classList.remove("modal-show");
-  });
-}
-
-// Модальное окно "Товар добавлен в корзину"
-if (document.querySelector(".modal-cart")) {
-  var cartmodal = document.querySelector(".modal-cart");
-  var cartshowbutton = document.querySelector(".item-popup-buy");
-  var cartclosebutton = document.querySelector(".modal-cart-close");
-  var cartbuttonwhite = document.querySelector(".cart-button-white");
-
-  cartshowbutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    cartmodal.classList.add("modal-show");
-  });
-
-  cartclosebutton.addEventListener("click", function(event) {
-    event.preventDefault();
-    cartmodal.classList.remove("modal-show");
-  });
-  cartbuttonwhite.addEventListener("click", function(event) {
-    event.preventDefault();
-    cartmodal.classList.remove("modal-show");
-  });
-}
-
-
 // Промо слайдер, работает как от checkbox так и от стрелок(циклически)
 if (document.querySelector(".promo-slider")) {
   var promoSlide1 = document.querySelector(".promo-slider-slide1");
@@ -114,5 +55,79 @@ if (document.querySelector(".promo-slider")) {
       promoSlide2.classList.remove("promo-slider-hide");
     }
   }
-
 }
+
+// Модальное окно "Напишите нам"
+if (document.querySelector(".modal-writeus")) {
+  var writeusModal = document.querySelector(".modal-writeus");
+  var writeusShowButton = document.querySelector(".button-feedback");
+  var writeusCloseButton = document.querySelector(".modal-writeus-close");
+
+  var writeusName = document.querySelector(".writeus-name");
+  var writeusEmail = document.querySelector(".writeus-email");
+  var writeusText = document.querySelector(".writeus-text");
+  var writeusSubmit = document.querySelector(".writeus-submit");
+
+
+  writeusShowButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    writeusModal.classList.add("modal-show");
+    writeusName.focus();
+  });
+
+  writeusCloseButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    writeusModal.classList.remove("modal-show");
+  });
+}
+
+// Модальное окно карты
+if (document.querySelector(".modal-map")) {
+  var mapModal = document.querySelector(".modal-map");
+  var mapShowButton = document.querySelector(".button-showmap");
+  var mapCloseButton = document.querySelector(".modal-map-close");
+
+  mapShowButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapModal.classList.add("modal-show");
+  });
+
+  mapCloseButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapModal.classList.remove("modal-show");
+  });
+}
+
+// Модальное окно "Товар добавлен в корзину"
+if (document.querySelector(".modal-cart")) {
+  var cartModal = document.querySelector(".modal-cart");
+  var cartShowButton = document.querySelectorAll(".item-popup-buy");
+  var cartCloseButton = document.querySelector(".modal-cart-close");
+  var cartButtonWhite = document.querySelector(".cart-button-white");
+  var cartShowButtonV = Array.from(document.querySelectorAll(".item-popup-buy"));
+
+  // cartShowButton.addEventListener("click", function(event) {
+  //   event.preventDefault();
+  //   cartModal.classList.add("modal-show");
+  // });
+
+  for (var i = 0; cartShowButton.length - 1; i++) {
+    cartShowButton[i].addEventListener("click", function(event) {
+      event.preventDefault();
+      cartModal.classList.add("modal-show");
+    });
+  }
+
+  cartCloseButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    cartModal.classList.remove("modal-show");
+  });
+  cartButtonWhite.addEventListener("click", function(event) {
+    event.preventDefault();
+    cartModal.classList.remove("modal-show");
+  });
+}
+
+
+
+
