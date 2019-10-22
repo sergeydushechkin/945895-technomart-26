@@ -1051,14 +1051,6 @@ input[type="radio"].visually-hidden,
   background-color: #f4f8f9;
 }
 
-.container.services-container {
-  padding-right: 0;
-}
-
-.services-description {
-  margin-bottom: 30px;
-}
-
 .services h2 {
   color: #000000;
   font-size: 30px;
@@ -1081,6 +1073,18 @@ input[type="radio"].visually-hidden,
   color: #000000;
   font-size: 13px;
   line-height: 24px;
+}
+
+.container.services-container {
+  padding-right: 0;
+}
+
+.services-description {
+  margin-bottom: 32px;
+}
+
+.services-description > p {
+  margin: 0;
 }
 
 .services-slider {
@@ -1269,6 +1273,10 @@ input[type="radio"].visually-hidden,
 .about-contacts p {
   padding-right: 90px;
   margin-bottom: 32px;
+}
+
+.about-contacts img {
+  background-color: #f4f2ed;
 }
 
 .button-showmap {
@@ -1737,7 +1745,7 @@ input[type="radio"].visually-hidden,
   position: relative;
 
   width: 218px;
-  height: 318px;
+  min-height: 318px;
 
   margin-right: 22px;
   margin-bottom: 20px;
@@ -1976,7 +1984,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. О товарах--------------------------------*/
 .about-goods {
   padding-top: 40px;
-  padding-bottom: 69px;
+  padding-bottom: 71px;
   background-color: #f2f6f8;
 }
 
@@ -2072,7 +2080,7 @@ input[type="radio"].visually-hidden,
 }
 
 .footer-nav-row1 a {
-  padding-left: 30px;
+  margin-left: 30px;
 
   color: #f1f5f7;
 }
@@ -2090,7 +2098,7 @@ input[type="radio"].visually-hidden,
 }
 
 .footer-nav-row2 a {
-  padding-left: 30px;
+  margin-left: 30px;
 
   color: #ffd180;
 }
@@ -2337,6 +2345,7 @@ input[type="radio"].visually-hidden,
 .modal-writeus-form input:focus,
 .modal-writeus-form textarea:focus {
   border-color: #ee3643;
+  outline: none;
 }
 
 .modal-writeus-form textarea {
@@ -2425,6 +2434,7 @@ input[type="radio"].visually-hidden,
   width: 940px;
   height: 446px;
   z-index: 1;
+  background-color: #f4f2ed;
 }
 
 .modal-map iframe {
