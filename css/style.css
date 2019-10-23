@@ -196,19 +196,19 @@ input[type="radio"].visually-hidden,
 
 /* Проверил в IE цвет меняется */
 .search-input::-webkit-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .search-input::-moz-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .search-input:-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .search-input::-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 .search-input::placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .header-form-search svg {
@@ -967,7 +967,7 @@ input[type="radio"].visually-hidden,
 
   font-size: 0;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -1020,7 +1020,6 @@ input[type="radio"].visually-hidden,
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: -0.8px;
 }
 
 .button-popular {
@@ -1131,7 +1130,7 @@ input[type="radio"].visually-hidden,
 .services {
   padding-top: 40px;
 
-  margin-bottom: 79px;
+  margin-bottom: 77px;
 
   background-color: #f4f8f9;
 }
@@ -1142,7 +1141,6 @@ input[type="radio"].visually-hidden,
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: -0.9px;
 }
 
 .services h3 {
@@ -1152,7 +1150,6 @@ input[type="radio"].visually-hidden,
   font-weight: normal;
   line-height: 36px;
   text-transform: uppercase;
-  letter-spacing: -0.7px;
 }
 
 .services p {
@@ -1181,7 +1178,7 @@ input[type="radio"].visually-hidden,
 }
 
 .services-buttons {
-  margin-top: 39px;
+  margin-top: 37px;
   padding: 0;
 
   width: 240px;
@@ -1461,7 +1458,6 @@ input[type="radio"].visually-hidden,
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: -0.7px;
 
   background-color: #f2f6f8;
 }
@@ -2122,7 +2118,7 @@ input[type="radio"].visually-hidden,
 /*------------------------Каталог. О товарах--------------------------------*/
 .about-goods {
   padding-top: 40px;
-  padding-bottom: 71px;
+  padding-bottom: 69px;
   background-color: #f2f6f8;
 }
 
@@ -2132,7 +2128,6 @@ input[type="radio"].visually-hidden,
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
-  letter-spacing: -0.6px;
   text-transform: uppercase;
 }
 
@@ -2585,6 +2580,27 @@ input[type="radio"].visually-hidden,
   font-size: 13px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+}
+
+.modal-writeus-form input::-webkit-input-placeholder,
+.modal-writeus-form textarea::-webkit-input-placeholder {
+  color: #a9a9a9;
+}
+.modal-writeus-form input::-moz-placeholder,
+.modal-writeus-form textarea::-moz-placeholder {
+  color: #a9a9a9;
+}
+.modal-writeus-form input:-ms-input-placeholder,
+.modal-writeus-form textarea:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+.modal-writeus-form input::-ms-input-placeholder,
+.modal-writeus-form textarea::-ms-input-placeholder {
+  color: #a9a9a9;
+}
+.modal-writeus-form input::placeholder,
+.modal-writeus-form textarea::placeholder {
+  color: #a9a9a9;
 }
 
 .modal-writeus-form input:focus,
